@@ -3,10 +3,11 @@
 #608e8e
 #91a8a2 */
 
-/* section {
+section {
   /* height: 100vh; */
-/* border: 1px solid red; */
+  border: 1px solid red;
 
+}
 
 * {
   margin: 0;
@@ -323,7 +324,6 @@ header .button {
   text-align: justify;
   padding: 0 10px;
   font-size: 1.5rem;
-  /* border: 1px solid red; */
 }
 
 .about article p,
@@ -872,6 +872,12 @@ MEDIA - ORIENTATION LANDSCAPE */
   .services .buyText a {
     width: 50%;
     font-size: 3.8rem;
+    transition: .3s;
+  }
+
+  .services a:hover {
+    background-color: rgb(23, 97, 207);
+
   }
 
   .services .dryText .more,
@@ -887,9 +893,16 @@ MEDIA - ORIENTATION LANDSCAPE */
 
 @media (orientation: landscape) and (min-width: 1280px) {
 
+  .dry,
+  .ozon,
+  .buy {
+    height: 40vh;
+
+  }
+
   .dry div img,
   .ozon div img {
-    height: 60vh;
+    height: 32vh;
   }
 
   .dry h2,
@@ -899,13 +912,12 @@ MEDIA - ORIENTATION LANDSCAPE */
   }
 
   .buy div i {
-    font-size: 10rem;
-    color: red;
+    font-size: 11rem;
   }
 
   .buy h2 {
-    font-size: 5rem;
-    color: red;
+    font-size: 3.5rem;
+    bottom: 8%;
   }
 
   .services .dryText,
@@ -917,7 +929,6 @@ MEDIA - ORIENTATION LANDSCAPE */
   .services .buyText {
     top: 8vh;
     font-size: 2.9rem;
-    color: red;
   }
 
   .services .dryText a,
