@@ -114,3 +114,72 @@ const buyGiveActive = () => {
 dry.addEventListener("click", dryGiveActive);
 ozon.addEventListener("click", ozonGiveActive);
 buy.addEventListener("click", buyGiveActive);
+
+//SECTION WORKS - GALLERY
+
+const worksImages = [
+  "combine1.jpg",
+  "combine2.jpg",
+  "combine3.jpg",
+  "combine4.jpg",
+  "combine5.jpg",
+  "gym1.jpeg",
+  "gym2.jpeg",
+  "gym3.jpeg",
+  "gym4.jpeg",
+  "gym5.jpeg",
+  "cabine1.jpg",
+  "cabine2.jpg",
+  "cabine3.jpg",
+  "agri1.jpg",
+  "agri2.jpg",
+  "agri3.jpg",
+  "agri4.jpg"
+];
+
+const leftAngle = document.querySelector(".fa-angle-left");
+const rightAngle = document.querySelector(".fa-angle-right");
+const image = document.querySelector(".image");
+const textWork = document.querySelector(".gallery p");
+
+image.style.backgroundImage = `url("img/${worksImages[0]}")`;
+textWork.textContent = "Odzysk części po naprawie kombajnu";
+
+let index = 0;
+
+rightAngle.addEventListener("click", () => {
+  if (index < worksImages.length - 1) {
+    image.style.backgroundImage = `url("img/${worksImages[++index]}")`;
+  } else if (index === worksImages.length - 1) {
+    index = -1;
+  }
+
+  console.log(index);
+  if (index >= 0 && index < 5) {
+    textWork.textContent = "Odzysk części po naprawie kombajnu";
+  } else if (index >= 5 && index <= 9) {
+    textWork.textContent = "Renowacja siłowni po zalaniu";
+  } else if (index === 10 && index <= 12) {
+    textWork.textContent = "Odzysk części po naprawie koparki";
+  } else if (index === 13 && index <= 17) {
+    textWork.textContent = "Oddzysk części maszyn po pożarze ";
+  }
+});
+
+leftAngle.addEventListener("click", () => {
+  if (index > 0) {
+    image.style.backgroundImage = `url("img/${worksImages[--index]}")`;
+  } else {
+    index = worksImages.length;
+  }
+  console.log(index);
+  if (index >= 0 && index < 5) {
+    textWork.textContent = "Odzysk częśći po naprawie kombajnu";
+  } else if (index >= 5 && index <= 9) {
+    textWork.textContent = "Renowacja siłowni po zalaniu";
+  } else if (index === 10 && index <= 12) {
+    textWork.textContent = "Odzysk części po naprawie koparki";
+  } else if (index === 13 && index <= 17) {
+    textWork.textContent = "Oddzysk części maszyn po pożarze ";
+  }
+});
