@@ -1053,3 +1053,11 @@ MEDIA - ORIENTATION LANDSCAPE */
   margin-top: 30px;
 
 }
+
+/* FOOTER */
+
+footer {
+  height: 10vw;
+  text-align: left;
+  margin-left: 10px;
+}
