@@ -147,38 +147,37 @@ textWork.textContent = "Odzysk części po naprawie kombajnu";
 
 let index = 0;
 
+//text change function
 const changeText=()=>{
   if (index >= 0 && index < 5) {
     textWork.textContent = "Odzysk części po naprawie kombajnu";
   } else if (index >= 5 && index <= 9) {
     textWork.textContent = "Renowacja siłowni po zalaniu";
-  } else if (index === 10 && index <= 12) {
+  } else if (index >= 10 && index <= 12) {
     textWork.textContent = "Odzysk części po naprawie koparki";
-  } else if (index === 13 && index <= 17) {
+  } else if (index >= 13 && index <= 16) {
     textWork.textContent = "Oddzysk części maszyn po pożarze ";
   }
 }
 
-
+//right angle
 rightAngle.addEventListener("click", () => {
   if (index < worksImages.length - 1) {
     image.style.backgroundImage = `url("img/${worksImages[++index]}")`;
-  } else if (index === worksImages.length - 1) {
-    index = -1;
+  } else if (index === worksImages.length-1) {
+    index=0
+    image.style.backgroundImage = `url("img/${worksImages[index]}")`
   }
-
-  console.log(index);
-  
   changeText()
 });
 
+//left angle
 leftAngle.addEventListener("click", () => {
   if (index > 0) {
     image.style.backgroundImage = `url("img/${worksImages[--index]}")`;
   } else {
-    index = worksImages.length;
+    index = worksImages.length-1;
+    image.style.backgroundImage = `url("img/${worksImages[index]}")`;
   }
-  console.log(index);
- 
   changeText()
 });
