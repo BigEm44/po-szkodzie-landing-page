@@ -147,14 +147,7 @@ textWork.textContent = "Odzysk części po naprawie kombajnu";
 
 let index = 0;
 
-rightAngle.addEventListener("click", () => {
-  if (index < worksImages.length - 1) {
-    image.style.backgroundImage = `url("img/${worksImages[++index]}")`;
-  } else if (index === worksImages.length - 1) {
-    index = -1;
-  }
-
-  console.log(index);
+const changeText=()=>{
   if (index >= 0 && index < 5) {
     textWork.textContent = "Odzysk części po naprawie kombajnu";
   } else if (index >= 5 && index <= 9) {
@@ -164,6 +157,19 @@ rightAngle.addEventListener("click", () => {
   } else if (index === 13 && index <= 17) {
     textWork.textContent = "Oddzysk części maszyn po pożarze ";
   }
+}
+
+
+rightAngle.addEventListener("click", () => {
+  if (index < worksImages.length - 1) {
+    image.style.backgroundImage = `url("img/${worksImages[++index]}")`;
+  } else if (index === worksImages.length - 1) {
+    index = -1;
+  }
+
+  console.log(index);
+  
+  changeText()
 });
 
 leftAngle.addEventListener("click", () => {
@@ -173,13 +179,6 @@ leftAngle.addEventListener("click", () => {
     index = worksImages.length;
   }
   console.log(index);
-  if (index >= 0 && index < 5) {
-    textWork.textContent = "Odzysk częśći po naprawie kombajnu";
-  } else if (index >= 5 && index <= 9) {
-    textWork.textContent = "Renowacja siłowni po zalaniu";
-  } else if (index === 10 && index <= 12) {
-    textWork.textContent = "Odzysk części po naprawie koparki";
-  } else if (index === 13 && index <= 17) {
-    textWork.textContent = "Oddzysk części maszyn po pożarze ";
-  }
+ 
+  changeText()
 });
