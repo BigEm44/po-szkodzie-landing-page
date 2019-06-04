@@ -21,6 +21,7 @@ html {
   max-width: 1920px;
 }
 
+
 /* mobile */
 
 /* HEADER */
@@ -320,6 +321,8 @@ header .button {
 /* SECTION ABOUT */
 
 .about article {
+  max-width: 1300px;
+  margin: 0 auto;
   height: 100vh;
   text-align: justify;
   padding: 0 10px;
@@ -461,8 +464,9 @@ header .button {
 SECTION - SERVICES */
 
 .services {
+  max-width: 1300px;
+  margin: 0 auto;
   height: 100vh;
-  margin: 5px;
   background-color: rgb(243, 233, 233);
   border-radius: 10px;
 }
@@ -470,7 +474,6 @@ SECTION - SERVICES */
 .servicesHeader {
   display: flex;
   background-color: white;
-  /* border-radius: 10px; */
 }
 
 .services div {
@@ -952,6 +955,8 @@ MEDIA - ORIENTATION LANDSCAPE */
 /* SECTION WORKS */
 
 .works {
+  max-width: 1300px;
+  margin: 0 auto;
   position: relative;
   height: 100vh;
   color: darkred;
@@ -1104,6 +1109,8 @@ MEDIA - ORIENTATION LANDSCAPE */
 
 /* SECTION CONTACT */
 .contact {
+  max-width: 1300px;
+  margin: 0 auto;
   height: 90vh;
   padding: 0 10px;
 }
@@ -1159,7 +1166,8 @@ MEDIA - ORIENTATION LANDSCAPE */
 /* FOOTER */
 
 footer {
+  max-width: 1300px;
+  margin: 0 auto;
   height: 10vw;
   text-align: left;
-  margin-left: 10px;
 }
