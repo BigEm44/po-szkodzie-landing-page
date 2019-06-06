@@ -71,9 +71,11 @@ header {
 
 nav.menu {
   display: none;
-  position: absolute;
-  top: 60px;
+  position: fixed;
+  z-index: 10;
+  top: 58px;
   left: 0;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -83,24 +85,19 @@ nav.menu.active {
 
 nav.menu ul {
   display: flex;
+  height: 90vh;
   flex-direction: column;
-  top: 300px;
   background-color: #231f20;
   list-style: none;
   justify-content: center;
 }
 
 nav.menu ul li {
-  border-bottom: 1px solid #ffffff;
-  flex-basis: 5vh;
+  flex-basis: 11vh;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 3.5rem;
   color: #ffffff;
   text-decoration: none;
-}
-
-nav.menu ul li:nth-child(1) {
-  border-top: 1px solid #ffffff;
 }
 
 nav.menu ul li a {
@@ -113,17 +110,24 @@ header h1 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 60%;
+  top: 55%;
 }
 
 header h1 span {
   width: 100vw;
   letter-spacing: 0.05rem;
-  font-size: 1.7rem;
-  font-weight: normal;
-  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white;
   padding: 10px 0 5px 5px;
   text-align: center;
+}
+
+header h1 span:nth-of-type(1) {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
 }
 
 header .button {
@@ -135,29 +139,63 @@ header .button {
   transform: translateX(-50%);
   text-align: center;
   font-size: 4rem;
-  text-shadow: 0 -15px 0 #231f20, 0 -30px 0 #231f20;
-  border: 2px solid black;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  overflow: hidden;
+  text-shadow: 1px 1px 2px white;
+  /* text-shadow: 0 -15px 0 #231f20, 0 -30px 0 #231f20; */
+  /* border: 2px solid black; */
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  /* border-radius: 50%; */
+  /* overflow: hidden; */
 }
 
 .fa-angle-down {
-  animation: arrow 1.7s infinite linear;
+  color: #231f20;
+  animation: arrow 3s linear infinite;
 }
 
 /* BUTTON ANIMATION - HEADER */
 @keyframes arrow {
   0% {
-    transform: translateY(-80px);
+    transform: translateY(-5px);
+  }
+
+  10% {
+    transform: translateY(-4px);
+  }
+
+  25% {
+    transform: translateY(-3px);
+  }
+
+  35% {
+    transform: translateY(-2px);
+  }
+
+  45% {
+    transform: translateY(-1px);
   }
 
   50% {
     transform: translateY(0px);
   }
 
+  55% {
+    transform: translateY(-1px);
+  }
+
+  60% {
+    transform: translateY(-2px);
+  }
+
+  75% {
+    transform: translateY(-3px);
+  }
+
+  90% {
+    transform: translateY(-4px);
+  }
+
   100% {
-    transform: translateY(80px);
+    transform: translateY(-5px);
   }
 }
 
@@ -317,6 +355,40 @@ header .button {
     font-size: 4rem;
   }
 }
+
+/*SECTION - BUTTONS*/
+/* .buttons{
+  height: 100vh;
+} */
+
+.buttons ul{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons ul li{
+  flex-basis: 25vh;
+  /* text-align: center; */
+  line-height: 25vh;
+  background-color: #231f20;
+  color: white;
+  border-bottom: 1px solid white;
+  font-size: 2.5rem;
+}
+
+.buttons ul li i {
+  margin: 0 6% 0 12%;
+}
+
+/* .buttons ul li a{
+  position: relative;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+} */
+
+
 
 /* SECTION ABOUT */
 
