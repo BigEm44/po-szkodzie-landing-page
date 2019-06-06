@@ -98,6 +98,8 @@ nav.menu ul li {
   font-size: 3.5rem;
   color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 nav.menu ul li a {
