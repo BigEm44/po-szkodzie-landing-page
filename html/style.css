@@ -3,8 +3,6 @@
 #608e8e
 #91a8a2 */
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +61,12 @@ header {
   font-size: 30px;
   color: #ffffff;
   z-index: 2;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.burger:hover {
+  color: deepskyblue;
 }
 
 nav.menu {
@@ -81,7 +85,7 @@ nav.menu.active {
 
 nav.menu ul {
   display: flex;
-  height: 90vh;
+  height: 100vh;
   flex-direction: column;
   background-color: #231f20;
   list-style: none;
@@ -96,7 +100,14 @@ nav.menu ul li {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: .3s;
 }
+
+nav.menu ul li:hover {
+  color: deepskyblue;
+}
+
 
 nav.menu ul li a {
   font-size: 1.8rem;
@@ -392,17 +403,6 @@ header .button {
 
 }
 
-/* @media (min-width:1280px){
-  
-  .line{
-    position: fixed;
-  }
-  .burger{
-    color:red;
-    position:fixed;
-    z-index: 2;
-  }
-} */
 
 
 /*SECTION - BUTTONS*/
@@ -411,6 +411,11 @@ header .button {
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.buttons ul li {
+  transition: .3s;
+  cursor: pointer;
 }
 
 .buttons ul li {
@@ -426,6 +431,9 @@ header .button {
   margin: 0 6% 0 12%;
 }
 
+.buttons ul li:hover {
+  color: deepskyblue;
+}
 
 /* SECTION BUTTONS - PORTRAIT */
 @media (orientation: portrait) and (min-width: 360px) {
@@ -467,7 +475,6 @@ header .button {
     margin: 0 5% 0 12%;
   }
 }
-
 
 
 /* SECTION BUTTONS - LANDSCAPE */
@@ -686,9 +693,9 @@ SECTION - SERVICES */
 
 .services {
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 20px auto;
   height: 100vh;
-  background-color: rgb(243, 233, 233);
+  background-color: #eee;
   border-radius: 10px;
 }
 
@@ -794,12 +801,14 @@ SECTION - SERVICES */
 .services .ozonText a,
 .services .buyText a {
   display: inline-block;
-  width: 60%;
-  font-size: 1.9rem;
+  width: 70%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid white;
   background-color: #29a9df;
+  box-shadow: 0 0 0 3px white, 0 0 0 6px #29a9df;
   color: white;
   border-radius: 10px;
   cursor: pointer;
@@ -954,9 +963,13 @@ MEDIA - ORIENTATION PORTRAIT */
   .services .dryText a,
   .services .ozonText a,
   .services .buyText a {
-    width: 70%;
-    font-size: 4.5rem;
+    width: 50%;
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 4rem;
+    box-shadow: 0 0 0 7px white, 0 0 0 12px #29a9df;
   }
+
 
   .services .dryText .more,
   .services .ozonText .more,
@@ -1002,7 +1015,7 @@ MEDIA - ORIENTATION LANDSCAPE */
   .services .dryText a,
   .services .ozonText a,
   .services .buyText a {
-    width: 60%;
+    width: 40%;
     font-size: 2.5rem;
   }
 
@@ -1044,7 +1057,7 @@ MEDIA - ORIENTATION LANDSCAPE */
   .services .dryText a,
   .services .ozonText a,
   .services .buyText a {
-    width: 60%;
+    width: 40%;
     font-size: 2.5rem;
   }
 
@@ -1094,13 +1107,15 @@ MEDIA - ORIENTATION LANDSCAPE */
   .services .dryText a,
   .services .ozonText a,
   .services .buyText a {
-    width: 50%;
-    font-size: 3.8rem;
+    width: 30%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 3.6rem;
     transition: .3s;
   }
 
   .services a:hover {
-    background-color: rgb(23, 97, 207);
+    box-shadow: 0 0 0 7px white, 0 0 0 10px #29a9df;
 
   }
 
@@ -1158,7 +1173,7 @@ MEDIA - ORIENTATION LANDSCAPE */
   .services .dryText a,
   .services .ozonText a,
   .services .buyText a {
-    width: 50%;
+    width: 30%;
     font-size: 3.8rem;
   }
 
