@@ -59,7 +59,7 @@ header {
   z-index: 2;
 }
 
-.burger{
+.burger {
   position: fixed;
   right: 20px;
   top: 0;
@@ -154,63 +154,83 @@ header .button {
   0% {
     transform: translateY(-10px);
   }
+
   5% {
     transform: translateY(-9px);
   }
+
   10% {
     transform: translateY(-8px);
   }
+
   15% {
     transform: translateY(-7px);
   }
+
   20% {
     transform: translateY(-6px);
   }
+
   25% {
     transform: translateY(-5px);
   }
+
   30% {
     transform: translateY(-4px);
   }
+
   35% {
     transform: translateY(-3px);
   }
+
   40% {
     transform: translateY(-2px);
   }
+
   45% {
     transform: translateY(-1px);
   }
+
   50% {
     transform: translateY(0px);
   }
+
   55% {
     transform: translateY(-1px);
   }
+
   60% {
     transform: translateY(-2px);
   }
+
   65% {
     transform: translateY(-3px);
   }
+
   70% {
     transform: translateY(-4px);
   }
+
   75% {
     transform: translateY(-5px);
   }
+
   80% {
     transform: translateY(-6px);
   }
+
   85% {
     transform: translateY(-7px);
   }
+
   90% {
     transform: translateY(-8px);
   }
+
   95% {
     transform: translateY(-9px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -251,7 +271,7 @@ header .button {
     font-size: 6rem;
   }
 
-  header h1 span{
+  header h1 span {
     font-size: 4rem;
   }
 
@@ -269,13 +289,13 @@ header .button {
   .line {
     height: 90px;
   }
-    
+
   .logo img {
     width: 75%;
     height: 90px;
     z-index: 2;
   }
-  
+
   .burger {
     line-height: 90px;
     font-size: 50px;
@@ -283,52 +303,52 @@ header .button {
 }
 
 @media (orientation:portrait) and (min-width: 1024px) {
-  nav.menu{
+  nav.menu {
     top: 138px;
   }
-  
-  nav.menu ul{
+
+  nav.menu ul {
     height: 100vh;
   }
-  
-  nav.menu ul li {
-     font-size: 8rem;
-   }
- 
-   header h1 span{
-     font-size: 6rem;
-   }
- 
-   header h1 span:nth-of-type(1) {
-     font-size: 8rem;
-   }
- 
-   header .button {
-     bottom: 200px;
-     width: 70px;
-     height: 70px;
-     font-size: 11rem;
-   }
- 
-   .line {
-     height: 140px;
-   }
-     
-   .logo img {
-     width: 100%;
-     height: 140px;
-   }
 
-   .burger {
+  nav.menu ul li {
+    font-size: 8rem;
+  }
+
+  header h1 span {
+    font-size: 6rem;
+  }
+
+  header h1 span:nth-of-type(1) {
+    font-size: 8rem;
+  }
+
+  header .button {
+    bottom: 200px;
+    width: 70px;
+    height: 70px;
+    font-size: 11rem;
+  }
+
+  .line {
+    height: 140px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 140px;
+  }
+
+  .burger {
     margin-right: 2%;
     line-height: 140px;
     font-size: 8rem;
-  } 
-   }
+  }
+}
 
 
 
- 
+
 /* LANDSCAPE - HEADER*/
 
 @media (orientation: landscape) and (min-width: 514px) {
@@ -340,10 +360,11 @@ header .button {
     top: 45%;
   }
 
-  header h1 span:nth-of-type(1){
+  header h1 span:nth-of-type(1) {
     font-size: 3.7rem;
   }
-  header h1 span{
+
+  header h1 span {
     font-size: 2.4rem;
   }
 
@@ -360,10 +381,11 @@ header .button {
     top: 45%;
   }
 
-  header h1 span:nth-of-type(1){
+  header h1 span:nth-of-type(1) {
     font-size: 4rem;
   }
-  header h1 span{
+
+  header h1 span {
     font-size: 2.8rem;
   }
 
@@ -389,13 +411,13 @@ header .button {
 
 /*SECTION - BUTTONS*/
 
-.buttons ul{
+.buttons ul {
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.buttons ul li{
+.buttons ul li {
   flex-basis: 25vh;
   line-height: 25vh;
   background-color: #231f20;
@@ -410,41 +432,41 @@ header .button {
 
 
 /* SECTION BUTTONS - PORTRAIT */
-@media (orientation: portrait) and (min-width: 360px){
-  .buttons ul li{
+@media (orientation: portrait) and (min-width: 360px) {
+  .buttons ul li {
     font-size: 3rem;
   }
-  
+
   .buttons ul li i {
     margin: 0 5% 0 10%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 410px){
-  .buttons ul li{
+@media (orientation: portrait) and (min-width: 410px) {
+  .buttons ul li {
     font-size: 3.5rem;
   }
-  
+
   .buttons ul li i {
     margin: 0 5% 0 10%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 600px){
-  .buttons ul li{
+@media (orientation: portrait) and (min-width: 600px) {
+  .buttons ul li {
     font-size: 4.5rem;
   }
-  
+
   .buttons ul li i {
     margin: 0 5% 0 12%;
   }
 }
 
-@media (orientation: portrait) and (min-width: 768px){
-  .buttons ul li{
+@media (orientation: portrait) and (min-width: 768px) {
+  .buttons ul li {
     font-size: 5rem;
   }
-  
+
   .buttons ul li i {
     margin: 0 5% 0 12%;
   }
@@ -454,26 +476,28 @@ header .button {
 
 /* SECTION BUTTONS - LANDSCAPE */
 
-@media (orientation: landscape) and (min-width: 533px){
-  .buttons ul li{
+@media (orientation: landscape) and (min-width: 533px) {
+  .buttons ul li {
     font-size: 3.2rem;
   }
 }
 
-@media (orientation: landscape) and (min-width: 640px){
-  .buttons ul li{
+@media (orientation: landscape) and (min-width: 640px) {
+  .buttons ul li {
     font-size: 3.7rem;
   }
 }
-@media (min-width: 1024px){
+
+@media (min-width: 1024px) {
   header h1 {
     top: 55%;
   }
 
-  header h1 span:nth-of-type(1){
+  header h1 span:nth-of-type(1) {
     font-size: 7rem;
   }
-  header h1 span{
+
+  header h1 span {
     font-size: 4rem;
   }
 
@@ -481,38 +505,40 @@ header .button {
     bottom: 145px;
     font-size: 8rem;
   }
-.buttons{
-  height: 0;
-}
-.buttons ul{
-  position: relative;
-  width: 100%;
-  height: 7vh;
-  top: -7vh;
-  display: flex;
-  flex-direction: row;
-  list-style:none;
-  overflow: hidden;
-  text-transform: uppercase;
+
+  .buttons {
+    height: 0;
+  }
+
+  .buttons ul {
+    position: relative;
+    width: 100%;
+    height: 7vh;
+    top: -7vh;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    overflow: hidden;
+    text-transform: uppercase;
+  }
+
+  .buttons ul li {
+    flex-basis: 25%;
+    font-size: 2rem;
+    line-height: 7vh;
+    border-right: 1px solid white;
+  }
+
+  .buttons ul li i {
+    margin: 0 10% 0 10%;
+  }
+
 }
 
-.buttons ul li{
-  flex-basis: 25%;
-  font-size: 2rem;
-  line-height: 7vh;
-  border-right: 1px solid white;
-}
-
-.buttons ul li i{
-  margin:0 10% 0 10%;
-}
-
-}
-
-@media (min-width: 1350px){
-.buttons ul li{
-  font-size: 2.5rem;
-}
+@media (min-width: 1350px) {
+  .buttons ul li {
+    font-size: 2.5rem;
+  }
 }
 
 
@@ -1365,8 +1391,207 @@ MEDIA - ORIENTATION LANDSCAPE */
 
 
 /* SECTION CONTACT - ORIENTATION PORTRAIT */
+@media (orientation:portrait) and (min-width:360px) {
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact h3 {
+    font-size: 2rem;
+  }
+
+  .contact p,
+  .contact li {
+    font-size: 1.8rem;
+  }
+
+  .contact li {
+    line-height: 2.8rem;
+  }
+
+  .toTop {
+    left: 235px;
+    font-size: 1rem;
+  }
+}
+
+@media (orientation:portrait) and (min-width:410px) {
+  .contact h2 {
+    font-size: 2.8rem;
+  }
+
+  .contact h3 {
+    font-size: 2.3rem;
+  }
+
+  .contact p,
+  .contact li {
+    font-size: 2rem;
+  }
+
+  .contact li {
+    line-height: 3rem;
+  }
+
+  .toTop {
+    left: 255px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (orientation:portrait) and (min-width:768px) {
+  .contact h2 {
+    font-size: 5rem;
+  }
+
+  .contact h3 {
+    margin: 20px 0;
+    font-size: 3.8rem;
+  }
+
+  .contact p,
+  .contact li {
+    font-size: 3.2rem;
+  }
+
+  .contact li {
+    line-height: 5rem;
+  }
+
+  .toTop {
+    left: 70%;
+    font-size: 1.7rem;
+    margin-top: 80px;
+  }
+
+  .contact .hours {
+    margin: 30px 0;
+  }
+
+  .contact .adress {
+    margin: 30px 0;
+  }
+
+  .contact .phone {
+    margin: 20px 0;
+  }
+}
+
+/* SECTION CONTACT - ORIENTATIONA LANDSCAPE */
+
+@media (orientation:landscape) and (min-width:533px) {
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact h3 {
+    margin: 5px 0;
+    font-size: 1.5rem;
+    color: brown;
+  }
+
+  .contact p,
+  .contact li {
+    font-size: 1.2rem;
+  }
+
+  .contact li {
+    line-height: 1.7rem;
+  }
+
+  .contact .hours {
+    margin: 5px 0;
+  }
+
+  .contact .adress {
+    margin: 5px 0;
+  }
+
+  .contact .phone {
+    margin: 5px 0;
+  }
+
+  .toTop {
+    left: 80%;
+    font-size: 0.7rem;
+    margin-top: 0;
+  }
+
+}
 
 
+
+@media (min-width:1024px) {
+  .contact h2 {
+    font-size: 7rem;
+  }
+
+  .contact h3 {
+    margin: 30px 0;
+    font-size: 4.8rem;
+  }
+
+  .contact p,
+  .contact li {
+    font-size: 3.8rem;
+  }
+
+  .contact li {
+    line-height: 7rem;
+  }
+
+  .toTop {
+    left: 75%;
+    font-size: 1.9rem;
+    margin-top: 90px;
+  }
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+  .contact h2 {
+    font-size: 4rem;
+  }
+
+  .contact h3 {
+    margin: 15px 0;
+    font-size: 2.8rem;
+  }
+
+  .contact p,
+  .contact li {
+    font-size: 3rem;
+  }
+
+  .contact li {
+    line-height: 5rem;
+  }
+
+  .toTop {
+    left: 75%;
+    font-size: 1.9rem;
+    margin-top: 90px;
+  }
+
+  .contact .hours {
+    margin: 5px 0;
+  }
+
+  .contact .adress {
+    margin: 5px 0;
+  }
+
+  .contact .phone {
+    margin: 3px 0;
+  }
+
+  .toTop {
+    left: 80%;
+    font-size: 1.3rem;
+    margin-top: 30px;
+  }
+
+}
 
 
 /* FOOTER */
@@ -1374,8 +1599,9 @@ MEDIA - ORIENTATION LANDSCAPE */
 footer {
   max-width: 1300px;
   margin: 0 auto;
-  height: 10vw;
-  text-align: left;
+  height: 5vh;
+  border-top: 1px solid black;
+  text-align: center;
+  line-height: 5vh;
+  font-size: 1.2rem;
 }
-
-
