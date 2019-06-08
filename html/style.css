@@ -59,7 +59,7 @@ header {
   z-index: 2;
 }
 
-.burger {
+.burger{
   position: fixed;
   right: 20px;
   top: 0;
@@ -142,62 +142,77 @@ header .button {
   text-align: center;
   font-size: 4rem;
   text-shadow: 1px 1px 2px white;
-  /* text-shadow: 0 -15px 0 #231f20, 0 -30px 0 #231f20; */
-  /* border: 2px solid black; */
-  /* background-color: rgba(255, 255, 255, 0.4); */
-  /* border-radius: 50%; */
-  /* overflow: hidden; */
 }
 
 .fa-angle-down {
   color: #231f20;
-  animation: arrow 3s linear infinite;
+  animation: arrow 2.5s linear infinite;
 }
 
 /* BUTTON ANIMATION - HEADER */
 @keyframes arrow {
   0% {
+    transform: translateY(-10px);
+  }
+  5% {
+    transform: translateY(-9px);
+  }
+  10% {
+    transform: translateY(-8px);
+  }
+  15% {
+    transform: translateY(-7px);
+  }
+  20% {
+    transform: translateY(-6px);
+  }
+  25% {
     transform: translateY(-5px);
   }
-
-  10% {
+  30% {
     transform: translateY(-4px);
   }
-
-  25% {
+  35% {
     transform: translateY(-3px);
   }
-
-  35% {
+  40% {
     transform: translateY(-2px);
   }
-
   45% {
     transform: translateY(-1px);
   }
-
   50% {
     transform: translateY(0px);
   }
-
   55% {
     transform: translateY(-1px);
   }
-
   60% {
     transform: translateY(-2px);
   }
-
-  75% {
+  65% {
     transform: translateY(-3px);
   }
-
-  90% {
+  70% {
     transform: translateY(-4px);
   }
-
-  100% {
+  75% {
     transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(-6px);
+  }
+  85% {
+    transform: translateY(-7px);
+  }
+  90% {
+    transform: translateY(-8px);
+  }
+  95% {
+    transform: translateY(-9px);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
 
@@ -233,37 +248,90 @@ header .button {
 
 @media (orientation: portrait) and (min-width: 768px) {
   nav.menu ul li a {
-    font-size: 3.5rem;
+    font-size: 6rem;
   }
 
-  header h1 span {
-    font-size: 3.5rem;
+  header h1 span{
+    font-size: 4rem;
+  }
+
+  header h1 span:nth-of-type(1) {
+    font-size: 6rem;
   }
 
   header .button {
     bottom: 30px;
     width: 70px;
     height: 70px;
-    font-size: 7rem;
-    text-shadow: 0 -30px 0 #231f20, 0 -60px 0 #231f20;
+    font-size: 8rem;
+  }
+
+  .line {
+    height: 90px;
+  }
+    
+  .logo img {
+    width: 75%;
+    height: 90px;
+    z-index: 2;
+  }
+  
+  .burger {
+    line-height: 90px;
+    font-size: 50px;
   }
 }
 
-/* LANDSCAPE */
-
-@media (orientation: landscape) {
-  header h1 {
-    top: 35%;
+@media (orientation:portrait) and (min-width: 1024px) {
+  nav.menu{
+    top: 138px;
   }
-
-  header .button {
-    width: 30px;
-    height: 30px;
-    font-size: 3rem;
+  
+  nav.menu ul{
+    height: 100vh;
   }
-}
+  
+  nav.menu ul li {
+     font-size: 8rem;
+   }
+ 
+   header h1 span{
+     font-size: 6rem;
+   }
+ 
+   header h1 span:nth-of-type(1) {
+     font-size: 8rem;
+   }
+ 
+   header .button {
+     bottom: 200px;
+     width: 70px;
+     height: 70px;
+     font-size: 11rem;
+   }
+ 
+   .line {
+     height: 140px;
+   }
+     
+   .logo img {
+     width: 100%;
+     height: 140px;
+   }
 
-@media (orientation: landscape) and (min-width: 640px) {
+   .burger {
+    margin-right: 2%;
+    line-height: 140px;
+    font-size: 8rem;
+  } 
+   }
+
+
+
+ 
+/* LANDSCAPE - HEADER*/
+
+@media (orientation: landscape) and (min-width: 514px) {
   nav.menu ul li a {
     font-size: 2rem;
   }
@@ -272,96 +340,54 @@ header .button {
     top: 45%;
   }
 
+  header h1 span:nth-of-type(1){
+    font-size: 3.7rem;
+  }
+  header h1 span{
+    font-size: 2.4rem;
+  }
+
   header .button {
-    bottom: 5px;
+    bottom: 8px;
     width: 35px;
     height: 35px;
-    font-size: 3rem;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1024px) {
-  nav.menu ul li a {
-    font-size: 2.5rem;
-  }
-
-  header h1 {
-    top: 45%;
-  }
-
-  header h1 span {
-    font-size: 3rem;
-  }
-
-  header .button {
-    bottom: 25px;
-    width: 55px;
-    height: 55px;
-    font-size: 6rem;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1053px) {
-  nav.menu ul {
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  nav.menu ul li:nth-child(1) {
-    border-top: none;
-  }
-
-  nav.menu ul li {
-    flex-grow: 1;
-    border: 1px solid black;
-    cursor: pointer;
-    transition: 0.2s linear;
-  }
-
-  nav.menu ul li a {
-    border: none;
-    font-size: 2.5rem;
-    letter-spacing: 0.3rem;
-  }
-
-  nav.menu ul li:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-
-  header .burger {
-    display: none;
-  }
-
-  header .phone {
-    position: absolute;
-    right: 40px;
-    top: 0;
-    line-height: 60px;
-    font-size: 2.5rem;
-    color: #ffffff;
-  }
-
-  header h1 {
-    top: 58%;
-  }
-
-  header h1 span {
-    font-size: 3rem;
-  }
-
-  header .button {
-    bottom: 20px;
-    width: 45px;
-    height: 45px;
     font-size: 4rem;
   }
 }
 
-/*SECTION - BUTTONS*/
-/* .buttons{
-  height: 100vh;
+@media (orientation: landscape) and (min-width: 640px) {
+  header h1 {
+    top: 45%;
+  }
+
+  header h1 span:nth-of-type(1){
+    font-size: 4rem;
+  }
+  header h1 span{
+    font-size: 2.8rem;
+  }
+
+  header .button {
+    bottom: 10px;
+    font-size: 4rem;
+  }
+
+}
+
+/* @media (min-width:1280px){
+  
+  .line{
+    position: fixed;
+  }
+  .burger{
+    color:red;
+    position:fixed;
+    z-index: 2;
+  }
 } */
+
+
+/*SECTION - BUTTONS*/
 
 .buttons ul{
   height: 100vh;
@@ -371,25 +397,123 @@ header .button {
 
 .buttons ul li{
   flex-basis: 25vh;
-  /* text-align: center; */
   line-height: 25vh;
   background-color: #231f20;
   color: white;
   border-bottom: 1px solid white;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
 }
 
 .buttons ul li i {
   margin: 0 6% 0 12%;
 }
 
-/* .buttons ul li a{
-  position: relative;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-} */
 
+/* SECTION BUTTONS - PORTRAIT */
+@media (orientation: portrait) and (min-width: 360px){
+  .buttons ul li{
+    font-size: 3rem;
+  }
+  
+  .buttons ul li i {
+    margin: 0 5% 0 10%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px){
+  .buttons ul li{
+    font-size: 3.5rem;
+  }
+  
+  .buttons ul li i {
+    margin: 0 5% 0 10%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 600px){
+  .buttons ul li{
+    font-size: 4.5rem;
+  }
+  
+  .buttons ul li i {
+    margin: 0 5% 0 12%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px){
+  .buttons ul li{
+    font-size: 5rem;
+  }
+  
+  .buttons ul li i {
+    margin: 0 5% 0 12%;
+  }
+}
+
+
+
+/* SECTION BUTTONS - LANDSCAPE */
+
+@media (orientation: landscape) and (min-width: 533px){
+  .buttons ul li{
+    font-size: 3.2rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 640px){
+  .buttons ul li{
+    font-size: 3.7rem;
+  }
+}
+@media (min-width: 1024px){
+  header h1 {
+    top: 55%;
+  }
+
+  header h1 span:nth-of-type(1){
+    font-size: 7rem;
+  }
+  header h1 span{
+    font-size: 4rem;
+  }
+
+  header .button {
+    bottom: 145px;
+    font-size: 8rem;
+  }
+.buttons{
+  height: 0;
+}
+.buttons ul{
+  position: relative;
+  width: 100%;
+  height: 7vh;
+  top: -7vh;
+  display: flex;
+  flex-direction: row;
+  list-style:none;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.buttons ul li{
+  flex-basis: 25%;
+  font-size: 2rem;
+  line-height: 7vh;
+  border-right: 1px solid white;
+}
+
+.buttons ul li i{
+  margin:0 10% 0 10%;
+}
+
+}
+
+@media (min-width: 1350px){
+.buttons ul li{
+  font-size: 2.5rem;
+}
+}
 
 
 /* SECTION ABOUT */
@@ -516,22 +640,23 @@ header .button {
   } */
 
   .line {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: 2;
   }
 
   .logo {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
-    z-index: 0;
+    z-index: 2;
   }
 
   .logo img {
     z-index: 0;
   }
+
 }
 
 /* 
@@ -1232,10 +1357,17 @@ MEDIA - ORIENTATION LANDSCAPE */
   left: 190px;
   background-color: white;
   border: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: bold;
   text-transform: uppercase;
   margin-top: 30px;
 }
+
+
+/* SECTION CONTACT - ORIENTATION PORTRAIT */
+
+
+
 
 /* FOOTER */
 
@@ -1245,3 +1377,5 @@ footer {
   height: 10vw;
   text-align: left;
 }
+
+
