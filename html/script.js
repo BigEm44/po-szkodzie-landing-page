@@ -12,37 +12,37 @@ menu.addEventListener("click", showMenu);
 //MENU NAVIGATION
 
 // services array
-// 0: section.about
-// 1: section.services
-// 2: section.works
-// 3: section.contact
+// 0: section.buttons
+// 1: section.about
+// 2: section.services
+// 3: section.works
+// 4: section.contact
+const mainPage = document.querySelector("header");
 const services = [...document.querySelectorAll("section")];
-
 const menuElements = [...document.querySelectorAll(".menuList li")];
 
-menuElements[0].addEventListener("click", () => {
-  let topPos = services[0].offsetTop;
-  window.scroll(0, topPos);
-});
 
-for (let i = 1; i < 4; i++) {
-  menuElements[i].addEventListener("click", () => {
-    let topPos = services[1].offsetTop;
-    window.scroll(0, topPos);
-  });
-}
 
-menuElements[4].addEventListener("click", () => {
-  let topPos = services[2].offsetTop;
-  window.scroll(0, topPos);
-});
+menuElements.forEach((menuElement,index)=>{
 
-menuElements[5].addEventListener("click", () => {
-  let topPos = services[3].offsetTop;
-  window.scroll(0, topPos);
-});
+  let topPos = services.map((service)=>service.offsetTop)
+  
+  menuElement.addEventListener("click", () => {
+  if(index===0){
+    window.scroll(0,0)
+  }else if(index===1){
+    window.scroll(0,topPos[1])
+  }else if(index===2 || index===3 || index===4){
+  window.scroll(0,topPos[2])
+  }else if(index===5){
+    window.scroll(0,topPos[3])
+  }else if(index===6){
+    window.scroll(0,topPos[4])}
 
-// console.log(topPos);
+  nav.classList.remove("active")
+  })
+})
+
 
 // MAIN PAGE BUTTON EVENT
 const button = document.querySelector(".button");
