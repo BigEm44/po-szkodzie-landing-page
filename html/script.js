@@ -21,28 +21,25 @@ const mainPage = document.querySelector("header");
 const services = [...document.querySelectorAll("section")];
 const menuElements = [...document.querySelectorAll(".menuList li")];
 
+let topPos = services.map((service) => service.offsetTop - 60);
 
-
-menuElements.forEach((menuElement,index)=>{
-
-  let topPos = services.map((service)=>service.offsetTop)
-  
+menuElements.forEach((menuElement, index) => {
   menuElement.addEventListener("click", () => {
-  if(index===0){
-    window.scroll(0,0)
-  }else if(index===1){
-    window.scroll(0,topPos[1])
-  }else if(index===2 || index===3 || index===4){
-  window.scroll(0,topPos[2])
-  }else if(index===5){
-    window.scroll(0,topPos[3])
-  }else if(index===6){
-    window.scroll(0,topPos[4])}
+    if (index === 0) {
+      window.scroll(0, 0);
+    } else if (index === 1) {
+      window.scroll(0, topPos[1]);
+    } else if (index === 2 || index === 3 || index === 4) {
+      window.scroll(0, topPos[2]);
+    } else if (index === 5) {
+      window.scroll(0, topPos[3]);
+    } else if (index === 6) {
+      window.scroll(0, topPos[4]);
+    }
 
-  nav.classList.remove("active")
-  })
-})
-
+    nav.classList.remove("active");
+  });
+});
 
 // MAIN PAGE BUTTON EVENT
 const button = document.querySelector(".button");
@@ -50,6 +47,16 @@ const button = document.querySelector(".button");
 button.addEventListener("click", () => {
   let topPos = services[0].offsetTop;
   window.scroll(0, topPos);
+});
+
+//MAIN PAGE BOTTOM BUTTONS
+
+const sectionButtons = [...document.querySelectorAll(".buttons li")];
+
+sectionButtons.forEach((sectionButton) => {
+  sectionButton.addEventListener("click", () => {
+    window.scroll(0, topPos[2]);
+  });
 });
 
 //SERVICES SECTION EVENTS
@@ -148,7 +155,7 @@ textWork.textContent = "Odzysk części po naprawie kombajnu";
 let index = 0;
 
 //text change function
-const changeText=()=>{
+const changeText = () => {
   if (index >= 0 && index < 5) {
     textWork.textContent = "Odzysk części po naprawie kombajnu";
   } else if (index >= 5 && index <= 9) {
@@ -158,17 +165,17 @@ const changeText=()=>{
   } else if (index >= 13 && index <= 16) {
     textWork.textContent = "Oddzysk części maszyn po pożarze ";
   }
-}
+};
 
 //right angle
 rightAngle.addEventListener("click", () => {
   if (index < worksImages.length - 1) {
     image.style.backgroundImage = `url("img/${worksImages[++index]}")`;
-  } else if (index === worksImages.length-1) {
-    index=0
-    image.style.backgroundImage = `url("img/${worksImages[index]}")`
+  } else if (index === worksImages.length - 1) {
+    index = 0;
+    image.style.backgroundImage = `url("img/${worksImages[index]}")`;
   }
-  changeText()
+  changeText();
 });
 
 //left angle
@@ -176,8 +183,14 @@ leftAngle.addEventListener("click", () => {
   if (index > 0) {
     image.style.backgroundImage = `url("img/${worksImages[--index]}")`;
   } else {
-    index = worksImages.length-1;
+    index = worksImages.length - 1;
     image.style.backgroundImage = `url("img/${worksImages[index]}")`;
   }
-  changeText()
+  changeText();
+});
+
+//SECTION CONTACT -BUTTON toTop
+
+document.querySelector(".toTop").addEventListener("click", () => {
+  window.scroll(0, 0);
 });
