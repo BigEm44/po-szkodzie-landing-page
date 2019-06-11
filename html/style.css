@@ -53,20 +53,56 @@ header {
   z-index: 2;
 }
 
+/* BURGER MENU */
+
 .burger {
   position: fixed;
+  width: 35px;
+  height: 60px;
   right: 20px;
   top: 0;
   line-height: 60px;
   font-size: 30px;
-  color: #ffffff;
+  background-color: #231f20;
   z-index: 2;
   cursor: pointer;
   transition: .3s;
 }
 
-.burger:hover {
-  color: deepskyblue;
+.row{
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+}
+
+.burger:hover .row{
+  background-color: deepskyblue;
+}
+
+.row01{
+  top: 26%;
+}
+
+.row02{
+  top: 46%;
+}
+
+.row03{
+  top: 68%;
+}
+
+.burger.close .row01{
+  transform: rotate(45deg);
+  top:47%;
+  background-color: deepskyblue;
+}
+
+.burger.close .row02, .burger.close .row03{
+  transform: rotate(-45deg);
+  top: 47%;
+  background-color: deepskyblue;
 }
 
 nav.menu {
@@ -120,6 +156,7 @@ header h1 {
   flex-direction: column;
   position: absolute;
   top: 55%;
+  
 }
 
 header h1 span {
@@ -130,13 +167,15 @@ header h1 span {
   text-shadow: 1px 1px 2px white;
   padding: 10px 0 5px 5px;
   text-align: center;
+  animation: headerSecondText 1.5s ease-in-out;
+  
 }
 
 header h1 span:nth-of-type(1) {
   font-size: 3.5rem;
   font-weight: bold;
   text-transform: uppercase;
-
+  animation: headerFirstText 1.5s ease-in-out;
 }
 
 header .button {
@@ -153,10 +192,35 @@ header .button {
 
 .fa-angle-down {
   color: #231f20;
-  animation: arrow 2.5s linear infinite;
+  animation: arrow 1.5s linear infinite;
+  cursor: pointer;
 }
 
-/* BUTTON ANIMATION - HEADER */
+/*  */
+
+@keyframes headerFirstText {
+  from {
+    opacity: 0;
+    transform: translateY(-100vh)
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
+@keyframes headerSecondText{
+  from{
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BUTTON-ANGLE ANIMATION - HEADER */
 @keyframes arrow {
   0% {
     transform: translateY(-10px);
@@ -1398,6 +1462,7 @@ MEDIA - ORIENTATION LANDSCAPE */
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 
