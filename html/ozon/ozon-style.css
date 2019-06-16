@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 16px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg img {
+    position: absolute;
+    opacity: 0.4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ozoning article p {
+    font-weight: 500;
+}
