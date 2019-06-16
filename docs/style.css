@@ -1001,11 +1001,11 @@ SECTION - SERVICES */
 }
 
 .dry {
-  background-color: rgb(243, 233, 233);
+  background-color: #eee;
 }
 
 .active {
-  background-color: rgb(243, 233, 233);
+  background-color: #eee;
 }
 
 .deActive {
@@ -1048,7 +1048,8 @@ SECTION - SERVICES */
 
 .buy h2 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
 }
 
 .buy h2 {
@@ -1066,20 +1067,20 @@ SECTION - SERVICES */
   top: 15vh;
   left: 0;
   padding: 5px;
-  background-color: rgb(243, 233, 233);
+  background-color: #eee;
   font-size: 1.7rem;
   text-align: justify;
 }
 
-.services .buyText {
-  top: 7vh;
+.services .buyText p {
+  top: 1vh;
   font-size: 1.6rem;
 }
 
 .services .dryText .more,
 .services .ozonText .more,
 .services .buyText .more {
-  background-color: rgb(243, 233, 233);
+  background-color: #eee;
   width: 100%;
   text-align: center;
   margin-top: 30px;
