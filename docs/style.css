@@ -818,6 +818,7 @@ header .button {
 /* SECTION ABOUT */
 
 .about article {
+  border: 1px solid red;
   max-width: 1300px;
   margin: 0 auto;
   height: 100vh;
@@ -830,13 +831,15 @@ header .button {
 .about article h3 {
   position: relative;
   left: 0;
-  top: 30%;
+  top: 15%;
 }
 
 .about article:nth-child(3) p,
 .about article:nth-child(3) h3 {
   top: 0;
+  padding-bottom: 20px;
 }
+
 
 .about article h3 {
   font-size: 1.9rem;
@@ -846,6 +849,7 @@ header .button {
 
 .list li {
   margin-left: 10px;
+  font-size: 1.4rem;
   list-style-type: square;
 }
 
