@@ -818,7 +818,6 @@ header .button {
 /* SECTION ABOUT */
 
 .about article {
-  border: 1px solid red;
   max-width: 1300px;
   margin: 0 auto;
   height: 100vh;
@@ -1646,23 +1645,23 @@ MEDIA - ORIENTATION LANDSCAPE */
 }
 
 .contact h2 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
 }
 
 .contact h3 {
   margin: 10px 0;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: brown;
 }
 
 .contact p,
 .contact li {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .contact li {
   list-style: none;
-  line-height: 2.5rem;
+  line-height: 2.4rem;
 }
 
 .contact li a {
@@ -1672,11 +1671,11 @@ MEDIA - ORIENTATION LANDSCAPE */
 }
 
 .contact .hours {
-  margin: 20px 0;
+  margin: 18px 0;
 }
 
 .contact .adress {
-  margin: 20px 0;
+  margin: 18px 0;
 }
 
 .contact .phone {
@@ -1700,20 +1699,20 @@ MEDIA - ORIENTATION LANDSCAPE */
 /* SECTION CONTACT - ORIENTATION PORTRAIT */
 @media (orientation:portrait) and (min-width:360px) {
   .contact h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   .contact h3 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .contact p,
   .contact li {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .contact li {
-    line-height: 2.8rem;
+    line-height: 2.7rem;
   }
 
   .toTop {
@@ -1724,20 +1723,20 @@ MEDIA - ORIENTATION LANDSCAPE */
 
 @media (orientation:portrait) and (min-width:410px) {
   .contact h2 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
 
   .contact h3 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 
   .contact p,
   .contact li {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .contact li {
-    line-height: 3rem;
+    line-height: 2.9rem;
   }
 
   .toTop {
