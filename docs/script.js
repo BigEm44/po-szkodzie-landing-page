@@ -28,17 +28,23 @@ menuElements.forEach((menuElement, index) => {
   menuElement.addEventListener("click", () => {
     if (index === 0) {
       window.scroll(0, 0);
+      menu.classList.toggle("close");
     } else if (index === 1) {
       window.scroll(0, topPos[1]);
+      menu.classList.toggle("close");
     } else if (index === 2 || index === 3 || index === 4) {
       window.scroll(0, topPos[2]);
+      menu.classList.toggle("close");
     } else if (index === 5) {
       window.scroll(0, topPos[3]);
+      menu.classList.toggle("close");
     } else if (index === 6) {
       window.scroll(0, topPos[4]);
+      menu.classList.toggle("close");
     }
 
     nav.classList.remove("active");
+    
   });
 });
 
