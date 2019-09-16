@@ -3,9 +3,11 @@
 //HAMBURGER MENU
 const menu = document.querySelector(".burger");
 const nav = document.querySelector("nav");
+const burgerLine = document.querySelector(".burgerLine");
 const showMenu = () => {
   nav.classList.toggle("active");
   menu.classList.toggle("close");
+  burgerLine.classList.toggle("burgerLineMenu");
 };
 
 menu.addEventListener("click", showMenu);
@@ -26,25 +28,25 @@ let topPos = services.map((service) => service.offsetTop - 60);
 
 menuElements.forEach((menuElement, index) => {
   menuElement.addEventListener("click", () => {
+    burgerLine.classList.remove("burgerLineMenu");
     if (index === 0) {
       window.scroll(0, 0);
       menu.classList.toggle("close");
     } else if (index === 1) {
-      window.scroll(0, topPos[1]);
+      window.scroll(0, topPos[0]);
       menu.classList.toggle("close");
     } else if (index === 2 || index === 3 || index === 4) {
-      window.scroll(0, topPos[2]);
+      window.scroll(0, topPos[1]);
       menu.classList.toggle("close");
     } else if (index === 5) {
-      window.scroll(0, topPos[3]);
+      window.scroll(0, topPos[2]);
       menu.classList.toggle("close");
     } else if (index === 6) {
-      window.scroll(0, topPos[4]);
+      window.scroll(0, topPos[3]);
       menu.classList.toggle("close");
     }
 
     nav.classList.remove("active");
-    
   });
 });
 
@@ -76,58 +78,113 @@ const ozonText = document.querySelector(".ozonText");
 const buyText = document.querySelector(".buyText");
 
 const dryGiveActive = () => {
-  dry.classList.remove("deActive");
   dry.classList.add("active");
-
-  dryText.classList.remove("servicesTextDeactive");
-  dryText.classList.add("textActive");
+  dryText.classList.add("servicesTextActive");
 
   if (
     dry.classList.contains("active") &&
-    dryText.classList.contains("textActive")
+    dryText.classList.contains("servicesTextActive")
   ) {
+    buy.classList.add("deActive");
     ozon.classList.remove("active");
-    buy.classList.remove("active");
 
+    buyText.classList.add("servicesTextDeactive");
     ozonText.classList.remove("servicesTextActive");
-    buyText.classList.remove("servicesTextActive");
   }
 };
 
 const ozonGiveActive = () => {
   ozon.classList.add("active");
+
   ozonText.classList.add("servicesTextActive");
+
   if (
     ozon.classList.contains("active") &&
     ozonText.classList.contains("servicesTextActive")
   ) {
-    dry.classList.add("deActive");
-    buy.classList.remove("active");
+    buy.classList.add("deActive");
+    dry.classList.remove("active");
 
-    dryText.classList.add("servicesTextDeactive");
-    buyText.classList.remove("servicesTextActive");
+    buyText.classList.add("servicesTextDeactive");
+    dryText.classList.remove("servicesTextActive");
   }
 };
 
 const buyGiveActive = () => {
+  buy.classList.remove("deActive");
   buy.classList.add("active");
 
+  buyText.classList.remove("servicesTextDeactive");
   buyText.classList.add("servicesTextActive");
-  if (
-    buy.classList.contains("active") &&
-    buyText.classList.contains("servicesTextActive")
-  ) {
-    dry.classList.add("deActive");
-    ozon.classList.remove("active");
 
-    dryText.classList.add("servicesTextDeactive");
+  if (buy.classList.contains("active")) {
+    ozon.classList.remove("active");
+    dry.classList.remove("active");
+
     ozonText.classList.remove("servicesTextActive");
+    dryText.classList.remove("servicesTextActive");
   }
 };
 
 dry.addEventListener("click", dryGiveActive);
 ozon.addEventListener("click", ozonGiveActive);
 buy.addEventListener("click", buyGiveActive);
+
+// // BUY BUTTOM
+
+// const servicesSection = document.querySelector(".services");
+// const buttonBuy = document.querySelector(".buttonBuy");
+
+// const buyButton = () => {
+//   document
+//     .querySelector(".buyShowMoreText")
+//     .classList.toggle("activeShowMoreText");
+
+//   window.scroll(0, topPos[1]);
+
+//   servicesSection.classList.add("servicesActive");
+
+//   if(servicesSection.classList.contains("servicesActive")){
+//     buttonBuy.textContent = "Zwiń";
+
+//   }else(
+//     buttonBuy.textContent = "Zobacz szczegóły"
+//   )
+
+// };
+
+// buttonBuy.addEventListener("click", buyButton);
+
+// // DRY BUTTOM
+
+// const buttonDry = document.querySelector(".buttonDry");
+
+// const dryButton = () => {
+//   document
+//     .querySelector(".showMoreText")
+//     .classList.toggle("activeShowMoreText");
+
+//   servicesSection.classList.add("servicesActive");
+
+//   window.scroll(0, topPos[1]);
+// };
+
+// buttonDry.addEventListener("click", dryButton);
+
+// // OZON BUTTOM
+
+// const buttonOzon = document.querySelector(".buttonOzon");
+
+// const ozonButton = () => {
+//   document
+//     .querySelector(".ozonShowMoreText")
+//     .classList.toggle("activeShowMoreText");
+
+//   servicesSection.classList.add("servicesActive");
+//   window.scroll(0, topPos[1]);
+// };
+
+// buttonOzon.addEventListener("click", ozonButton);
 
 //SECTION WORKS - GALLERY
 
