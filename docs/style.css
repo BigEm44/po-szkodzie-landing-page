@@ -30,15 +30,16 @@ body {
 header {
   height: 100vh;
   background-color: #f0eee1;
-  /* background-color: #2b337b; */
+
 }
 
 header h1 {
   position: absolute;
   bottom: 100px;
   left: 30px;
+  text-transform: uppercase;
   font-size: 2.8rem;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 40px;
   color: #f0582b;
   animation: headerFirstText 2.5s ease-in-out;
@@ -68,7 +69,6 @@ header h1 {
 }
 
 .burgerLineMenu {
-  background-color: #231f20;
   background-color: #2b337b;
 }
 
@@ -111,14 +111,10 @@ header h1 {
 }
 
 .burger.close .row01 {
-  /* position: fixed; */
   position: absolute;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  /* height: 4px; */
-  /* width: 100%; */
-  /* width: 20px; */
   top: 57%;
   background-color: #ffffff;
   background-color: #f0582b;
@@ -127,15 +123,11 @@ header h1 {
 
 .burger.close .row02,
 .burger.close .row03 {
-  /* position: fixed; */
   position: absolute;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 57%;
-  /* width: 10%;
-  height: 4px; */
-  /* width: 5px; */
   background-color: #ffffff;
   background-color: #f0582b;
   z-index: 3;
@@ -456,110 +448,10 @@ header .button {
 /* MEDIA - HEADER */
 /* PORTRAIT */
 @media (orientation: portrait) and (min-width: 360px) {
-  nav.menu ul li a {
-    font-size: 2rem;
-  }
 
-  header h1 span {
-    font-size: 2rem;
-  }
-
-  header .button {
-    bottom: 20px;
-  }
 }
 
-@media (orientation: portrait) and (min-width: 410px) {
-  nav.menu ul li a {
-    font-size: 2.5rem;
-  }
 
-  header h1 span {
-    font-size: 2.5rem;
-  }
-
-  header .button {
-    bottom: 25px;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 768px) {
-  nav.menu ul li a {
-    font-size: 6rem;
-  }
-
-  header h1 span {
-    font-size: 4rem;
-  }
-
-  header h1 span:nth-of-type(1) {
-    font-size: 6rem;
-  }
-
-  header .button {
-    bottom: 30px;
-    width: 70px;
-    height: 70px;
-    font-size: 8rem;
-  }
-
-
-
-  .logo img {
-    width: 75%;
-    height: 90px;
-    z-index: 2;
-  }
-
-  .burger {
-    line-height: 90px;
-    font-size: 50px;
-  }
-}
-
-@media (orientation:portrait) and (min-width: 1024px) {
-  nav.menu {
-    top: 138px;
-  }
-
-  nav.menu ul {
-    height: 100vh;
-  }
-
-  nav.menu ul li {
-    font-size: 8rem;
-  }
-
-  header h1 span {
-    font-size: 6rem;
-  }
-
-  header h1 span:nth-of-type(1) {
-    font-size: 8rem;
-  }
-
-  header .button {
-    bottom: 200px;
-    width: 70px;
-    height: 70px;
-    font-size: 11rem;
-  }
-
-  .line {
-    height: 140px;
-  }
-
-  .logo img {
-    width: 100%;
-    height: 140px;
-  }
-
-  .burger {
-    margin-right: 2%;
-    line-height: 140px;
-    font-size: 8rem;
-  }
-}
 
 
 
@@ -567,47 +459,7 @@ header .button {
 /* LANDSCAPE - HEADER*/
 
 @media (orientation: landscape) and (min-width: 514px) {
-  nav.menu ul li a {
-    font-size: 2rem;
-  }
-
-  header h1 {
-    top: 45%;
-  }
-
-  header h1 span:nth-of-type(1) {
-    font-size: 3.7rem;
-  }
-
-  header h1 span {
-    font-size: 2.4rem;
-  }
-
-  header .button {
-    bottom: 8px;
-    width: 35px;
-    height: 35px;
-    font-size: 4rem;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 640px) {
-  header h1 {
-    top: 45%;
-  }
-
-  header h1 span:nth-of-type(1) {
-    font-size: 4rem;
-  }
-
-  header h1 span {
-    font-size: 2.8rem;
-  }
-
-  header .button {
-    bottom: 10px;
-    font-size: 4rem;
-  }
+  
 
 }
 
@@ -616,7 +468,7 @@ header .button {
 
 .about article {
   margin: 0 auto;
-  height: 120vh;
+  height: 130vh;
   text-align: justify;
   padding: 30px 10px;
   font-size: 1.5rem;
@@ -632,7 +484,7 @@ header .button {
 .about article h2 {
   font-size: 1.9rem;
   padding-bottom: 30px;
-  /* color: #ffc228; */
+  font-weight: 500;
   color: #f0582b;
 }
 
@@ -648,119 +500,14 @@ header .button {
 
 /* MEDIA - SECTION "ABOUT" */
 /* ORIENTATION - PORTRAIT */
-@media (orientation: portrait) and (min-width: 360px) {
-  .about article {
-    font-size: 1.7rem;
-  }
-
-  .about article h3 {
-    font-size: 2.1rem;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 410px) {
-  .about article {
-    font-size: 1.9rem;
-  }
-
-  .about article h3 {
-    font-size: 2.3rem;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 768px) {
-  .about article {
-    font-size: 3rem;
-  }
-
-  .about article h3 {
-    font-size: 3.8rem;
-  }
-
-  .list li {
-    margin-left: 20px;
-    list-style-type: square;
-  }
-}
-
-@media (orientation: portrait) and (min-width: 1024px) {
-  .about article {
-    font-size: 4rem;
-  }
-
-  .about article h3 {
-    font-size: 5.5rem;
-  }
-
-  .list li {
-    margin-left: 30px;
-  }
-}
-
-/* MEDIA - SECTION "ABOUT" */
-/* ORIENTATION - LANDSCAPE */
-
-@media (orientation: landscape) and (min-width: 533px) {
-  .about article:nth-child(3) h3 {
-    padding-bottom: 10px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1024px) {
-  .about article {
-    font-size: 3rem;
-  }
-
-  .about article h3 {
-    font-size: 3.5rem;
-  }
-
-  .list li {
-    margin-left: 20px;
-    list-style-type: square;
-  }
-
-  .about article:nth-child(3) h3 {
-    padding-bottom: 40px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1280px) {
-  /* .about article {
-    font-size: 4.5rem;
-
-  } */
-
-  .list li {
-    font-size: 3rem;
-  }
-
-
-
-  .logo {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 2;
-  }
-
-  .logo img {
-    z-index: 0;
-  }
-
-}
 
 /* 
 SECTION - SERVICES */
 
 .services {
   margin: 0 auto;
-  height: 140vh;
-  /* background-color: #f0eee1; */
-}
-
-.servicesActive {
   height: 150vh;
+
 }
 
 .servicesHeader {
@@ -768,8 +515,6 @@ SECTION - SERVICES */
   display: -ms-flexbox;
   display: flex;
   background-color: #f0eee1;
-
-
 }
 
 .services div {
@@ -856,6 +601,7 @@ SECTION - SERVICES */
   padding: 5px;
   background-color: #ffc228;
   font-size: 1.4rem;
+  line-height: 2.8rem;
   text-align: justify;
   color: black;
 }
@@ -865,13 +611,19 @@ SECTION - SERVICES */
   color: black;
 }
 
+.buyText li,
+.ozonText li{
+  list-style-type: square;
+  margin-left: 20px;
+
+}
+
 .services .dryText .more,
 .services .ozonText .more,
 .services .buyText .more {
   background-color: #ffc228;
   width: 100%;
   text-align: center;
-  /* margin-top: 20px; */
 }
 
 .showMoreText,
@@ -904,365 +656,19 @@ MEDIA - ORIENTATION PORTRAIT */
 
 @media (min-width: 360px) and (orientation: portrait) {
 
-  .dry h2,
-  .ozon h2 {
-    font-size: 1.7rem;
+
   }
 
-  .buy h2 {
-    font-size: 1.6rem;
-  }
-
-  .buy div i {
-    font-size: 5rem;
-  }
-
-  .services .dryText,
-  .services .ozonText {
-    font-size: 2rem;
-  }
-
-  .services .buyText {
-    top: 7vh;
-    font-size: 1.8rem;
-  }
-
-  .services .dryText a,
-  .services .ozonText a,
-  .services .buyText a {
-    width: 70%;
-    font-size: 2.3rem;
-  }
-}
-
-@media (min-width: 410px) and (orientation: portrait) {
-
-  .dry h2,
-  .ozon h2 {
-    font-size: 1.9rem;
-  }
-
-  .buy h2 {
-    font-size: 1.8rem;
-  }
-
-  .buy div i {
-    font-size: 6rem;
-  }
-
-  .services .dryText,
-  .services .ozonText {
-    font-size: 2.1rem;
-  }
-
-  .services .buyText {
-    top: 8vh;
-    font-size: 2rem;
-  }
-
-  .services .dryText a,
-  .services .ozonText a,
-  .services .buyText a {
-    width: 70%;
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 768px) and (orientation: portrait) {
-
-  .dry h2,
-  .ozon h2 {
-    font-size: 3rem;
-  }
-
-  .buy h2 {
-    font-size: 2.7rem;
-  }
-
-  .buy div i {
-    font-size: 8rem;
-  }
-
-  .services .dryText,
-  .services .ozonText {
-    font-size: 3.7rem;
-  }
-
-  .services .buyText {
-    top: 8vh;
-    font-size: 3.2rem;
-  }
-
-  .services .dryText a,
-  .services .ozonText a,
-  .services .buyText a {
-    width: 70%;
-    font-size: 3.5rem;
-  }
-
-  .services .dryText .more,
-  .services .ozonText .more,
-  .services .buyText .more {
-    margin-top: 50px;
-  }
-}
-
-@media (min-width: 1024px) and (orientation: portrait) {
-
-  .dry h2,
-  .ozon h2 {
-    font-size: 4rem;
-  }
-
-  .buy h2 {
-    font-size: 3.5rem;
-  }
-
-  .buy div i {
-    font-size: 10rem;
-  }
-
-  .services .dryText,
-  .services .ozonText {
-    font-size: 4.7rem;
-  }
-
-  .services .buyText {
-    top: 8vh;
-    font-size: 4.5rem;
-  }
-
-  .services .dryText a,
-  .services .ozonText a,
-  .services .buyText a {
-    width: 50%;
-    height: 6rem;
-    line-height: 6rem;
-    font-size: 4rem;
-    -webkit-box-shadow: 0 0 0 7px white, 0 0 0 12px #29a9df;
-    box-shadow: 0 0 0 7px white, 0 0 0 12px #29a9df;
-  }
-
-
-  .services .dryText .more,
-  .services .ozonText .more,
-  .services .buyText .more {
-    margin-top: 70px;
-  }
-}
+ 
 
 /* SECTION SERVICES
 MEDIA - ORIENTATION LANDSCAPE */
 
 @media (orientation: landscape) and (min-width: 533px) {
 
-  .dry,
-  .ozon,
-  .buy {
-    height: 30vh;
+ 
   }
-
-  .dry div img,
-  .ozon div img {
-    height: 18vh;
-  }
-
-  .dry h2,
-  .ozon h2 {
-    bottom: 5%;
-    font-size: 1.7rem;
-    text-transform: uppercase;
-  }
-
-  .services .dryText,
-  .services .ozonText {
-    top: 5vh;
-    font-size: 1.7rem;
-  }
-
-  .services .buyText {
-    top: 3vh;
-    font-size: 1.5rem;
-  }
-
-  .services .dryText a,
-  .services .ozonText a,
-  .services .buyText a {
-    width: 40%;
-    font-size: 2.5rem;
-  }
-
-  .services .dryText .more,
-  .services .ozonText .more,
-  .services .buyText .more {
-    margin-top: 20px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 640px) {
-
-  .dry div img,
-  .ozon div img {
-    height: 20vh;
-  }
-
-  .dry h2,
-  .ozon h2 {
-    bottom: 3%;
-    font-size: 1.9rem;
-  }
-
-  .buy h2 {
-    font-size: 1.5rem;
-  }
-
-  .services .dryText,
-  .services .ozonText {
-    top: 10vh;
-    font-size: 1.9rem;
-  }
-
-  .services .buyText {
-    top: 6vh;
-    font-size: 1.7rem;
-  }
-
-  .services .dryText a,
-  .services .ozonText a,
-  .services .buyText a {
-    width: 40%;
-    font-size: 2.5rem;
-  }
-
-  .services .dryText .more,
-  .services .ozonText .more,
-  .services .buyText .more {
-    margin-top: 30px;
-  }
-
-  .services .buyText .more {
-    margin-top: 20px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1024px) {
-
-  .dry div img,
-  .ozon div img {
-    height: 20vh;
-  }
-
-  .dry h2,
-  .ozon h2 {
-    bottom: 3%;
-    font-size: 3.5rem;
-  }
-
-  .buy div i {
-    font-size: 10rem;
-  }
-
-  .buy h2 {
-    font-size: 2.9rem;
-  }
-
-  .services .dryText,
-  .services .ozonText {
-    top: 10vh;
-    font-size: 3.1rem;
-  }
-
-  .services .buyText {
-    top: 8vh;
-    font-size: 2.9rem;
-  }
-
-  .services .dryText a,
-  .services .ozonText a,
-  .services .buyText a {
-    width: 30%;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    font-size: 3.6rem;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-  }
-
-  .services a:hover {
-    -webkit-box-shadow: 0 0 0 7px white, 0 0 0 10px #29a9df;
-    box-shadow: 0 0 0 7px white, 0 0 0 10px #29a9df;
-
-  }
-
-  .services .dryText .more,
-  .services .ozonText .more,
-  .services .buyText .more {
-    margin-top: 55px;
-  }
-
-  .services .buyText .more {
-    margin-top: 40px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1280px) {
-
-  .dry,
-  .ozon,
-  .buy {
-    height: 40vh;
-
-  }
-
-  .dry div img,
-  .ozon div img {
-    height: 32vh;
-  }
-
-  .dry h2,
-  .ozon h2 {
-    bottom: 3%;
-    font-size: 3.5rem;
-  }
-
-  .buy div i {
-    font-size: 11rem;
-  }
-
-  .buy h2 {
-    font-size: 3.5rem;
-    bottom: 8%;
-  }
-
-  .services .dryText,
-  .services .ozonText {
-    top: 10vh;
-    font-size: 3.1rem;
-  }
-
-  .services .buyText {
-    top: 8vh;
-    font-size: 2.9rem;
-  }
-
-  .services .dryText a,
-  .services .ozonText a,
-  .services .buyText a {
-    width: 30%;
-    font-size: 3.8rem;
-  }
-
-  .services .dryText .more,
-  .services .ozonText .more,
-  .services .buyText .more {
-    margin-top: 55px;
-  }
-
-  .services .buyText .more {
-    margin-top: 40px;
-  }
-}
+ 
 
 /* SECTION WORKS */
 
@@ -1278,6 +684,7 @@ MEDIA - ORIENTATION LANDSCAPE */
 .works h2 {
   margin: 8vh 5vh;
   font-size: 2.4rem;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1295,7 +702,7 @@ MEDIA - ORIENTATION LANDSCAPE */
 .gallery p {
   font-size: 1.7rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   margin-top: 4vh;
 }
@@ -1317,123 +724,34 @@ MEDIA - ORIENTATION LANDSCAPE */
 
 
 @media (min-width: 360px) and (orientation: portrait) {
-  .works h2 {
-    font-size: 2.7rem;
-  }
+ 
 
-  .gallery p {
-    font-size: 1.9rem;
-  }
+ 
 }
 
-@media (min-width: 410px) and (orientation: portrait) {
-  .works h2 {
-    font-size: 3.1rem;
-  }
-
-  .gallery p {
-    font-size: 2.2rem;
-  }
-
-}
-
-@media (min-width: 768px) and (orientation: portrait) {
-  .works h2 {
-    font-size: 5rem;
-  }
-
-  .gallery p {
-    font-size: 3.9rem;
-  }
-
-  .gallery .fas {
-    font-size: 9rem;
-  }
-
-}
 
 /* orientation landscape - section works */
 
 @media (min-width: 533px) and (orientation: landscape) {
-  .gallery div {
-    height: 75vh;
-  }
+  
 
-  .works h2 {
-    margin: 2vh 5vh;
-    font-size: 2rem;
-  }
-
-  .gallery p {
-    font-size: 1.7rem;
-  }
-
-  .gallery .fas {
-    font-size: 5rem;
-  }
 
 }
 
-@media (min-width: 533px) and (orientation: landscape) {
-  .gallery div {
-    height: 75vh;
-  }
-
-  .works h2 {
-    margin: 2vh 5vh;
-    font-size: 2rem;
-  }
-
-  .gallery p {
-    font-size: 1.7rem;
-  }
-
-  .gallery .fas {
-    font-size: 5rem;
-  }
-
-}
-
-@media (min-width: 731px) and (orientation: landscape) {
-  .works h2 {
-    font-size: 2.2rem;
-  }
-
-  .gallery p {
-    font-size: 1.9rem;
-  }
-
-}
-
-@media (min-width: 1024px) and (orientation: landscape) {
-  .works h2 {
-    font-size: 4rem;
-  }
-
-  .gallery p {
-    font-size: 3.7rem;
-  }
-
-  .gallery .fas {
-    font-size: 9rem;
-  }
-
-}
 
 /* SECTION CONTACT */
 .contact {
-  max-width: 1300px;
   margin: 0 auto;
   height: 90vh;
-  padding: 0 10px;
+  padding: 30px 10px;
   background-color: #2b337b;
-  /* background-color: #1a1a1a; */
-  /* background-color: #f0eee1; */
+ 
 }
 
 .contact h2 {
   font-size: 2.1rem;
   color: #f0582b;
+  font-weight: 500;
 
 }
 
@@ -1441,6 +759,7 @@ MEDIA - ORIENTATION LANDSCAPE */
   margin: 10px 0;
   font-size: 1.7rem;
   color: #f0582b;
+  font-weight: 500;
 
 }
 
@@ -1463,7 +782,6 @@ MEDIA - ORIENTATION LANDSCAPE */
   font-weight: 400;
 }
 
-.contact .adress,
 .contact .adress {
   margin: 18px 0;
 }
@@ -1476,11 +794,17 @@ MEDIA - ORIENTATION LANDSCAPE */
   color: #e6e6e6;
 }
 
+.phone p,
+.email p{
+  font-size: 1.8rem;
+}
+
 .toTop {
   position: relative;
   left: 190px;
   bottom: 25vh;
-  background-color: white;
+  background-color:#2b337b;
+  color: #e6e6e6;
   border: none;
   font-size: 0.9rem;
   font-weight: bold;
@@ -1492,212 +816,25 @@ MEDIA - ORIENTATION LANDSCAPE */
 
 /* SECTION CONTACT - ORIENTATION PORTRAIT */
 @media (orientation:portrait) and (min-width:360px) {
-  .contact h2 {
-    font-size: 2.3rem;
-  }
 
-  .contact h3 {
-    font-size: 1.9rem;
-  }
-
-  .contact p,
-  .contact li {
-    font-size: 1.7rem;
-  }
-
-  .contact li {
-    line-height: 2.7rem;
-  }
-
-  .toTop {
-    left: 235px;
-    font-size: 1rem;
-  }
 }
 
-@media (orientation:portrait) and (min-width:410px) {
-  .contact h2 {
-    font-size: 2.7rem;
-  }
 
-  .contact h3 {
-    font-size: 2.2rem;
-  }
-
-  .contact p,
-  .contact li {
-    font-size: 1.9rem;
-  }
-
-  .contact li {
-    line-height: 2.9rem;
-  }
-
-  .toTop {
-    left: 255px;
-    font-size: 1.1rem;
-  }
-}
-
-@media (orientation:portrait) and (min-width:768px) {
-  .contact h2 {
-    font-size: 5rem;
-  }
-
-  .contact h3 {
-    margin: 20px 0;
-    font-size: 3.8rem;
-  }
-
-  .contact p,
-  .contact li {
-    font-size: 3.2rem;
-  }
-
-  .contact li {
-    line-height: 5rem;
-  }
-
-  .toTop {
-    left: 70%;
-    font-size: 1.7rem;
-    margin-top: 80px;
-  }
-
-  .contact .hours {
-    margin: 30px 0;
-  }
-
-  .contact .adress {
-    margin: 30px 0;
-  }
-
-  .contact .phone {
-    margin: 20px 0;
-  }
-}
 
 /* SECTION CONTACT - ORIENTATIONA LANDSCAPE */
 
 @media (orientation:landscape) and (min-width:533px) {
 
-  .contact h2 {
-    font-size: 2rem;
   }
 
-  .contact h3 {
-    margin: 5px 0;
-    font-size: 1.5rem;
-    color: brown;
-  }
-
-  .contact p,
-  .contact li {
-    font-size: 1.2rem;
-  }
-
-  .contact li {
-    line-height: 1.7rem;
-  }
-
-  .contact .hours {
-    margin: 5px 0;
-  }
-
-  .contact .adress {
-    margin: 5px 0;
-  }
-
-  .contact .phone {
-    margin: 5px 0;
-  }
-
-  .toTop {
-    left: 80%;
-    font-size: 0.7rem;
-    margin-top: 0;
-  }
-
-}
 
 
 
-@media (min-width:1024px) {
-  .contact h2 {
-    font-size: 7rem;
-  }
-
-  .contact h3 {
-    margin: 30px 0;
-    font-size: 4.8rem;
-  }
-
-  .contact p,
-  .contact li {
-    font-size: 3.8rem;
-  }
-
-  .contact li {
-    line-height: 7rem;
-  }
-
-  .toTop {
-    left: 75%;
-    font-size: 1.9rem;
-    margin-top: 90px;
-  }
-}
-
-@media (orientation:landscape) and (min-width:1024px) {
-  .contact h2 {
-    font-size: 4rem;
-  }
-
-  .contact h3 {
-    margin: 15px 0;
-    font-size: 2.8rem;
-  }
-
-  .contact p,
-  .contact li {
-    font-size: 3rem;
-  }
-
-  .contact li {
-    line-height: 5rem;
-  }
-
-  .toTop {
-    left: 75%;
-    font-size: 1.9rem;
-    margin-top: 90px;
-  }
-
-  .contact .hours {
-    margin: 5px 0;
-  }
-
-  .contact .adress {
-    margin: 5px 0;
-  }
-
-  .contact .phone {
-    margin: 3px 0;
-  }
-
-  .toTop {
-    left: 80%;
-    font-size: 1.3rem;
-    margin-top: 30px;
-  }
-
-}
 
 
 /* FOOTER */
 
 footer {
-  max-width: 1300px;
   margin: 0 auto;
   height: 5vh;
   background-color: #231f20;
@@ -1710,40 +847,14 @@ footer {
 /* FOOTER - ORIENTATION PORTRAIT */
 
 @media (orientation:portrait) and (min-width:410px) {
-  footer {
-    font-size: 1.5rem;
-  }
+  
 }
 
-@media (orientation:portrait) and (min-width:768px) {
-  footer {
-    font-size: 2rem;
-  }
-}
+
 
 /* FOOTER - ORIENTATION LANDSCAPE */
 
 @media (orientation:landscape) and (min-width:533px) {
-  footer {
-    font-size: 1rem;
-  }
+  
 }
 
-@media (orientation:landscape) and (min-width:640px) {
-  footer {
-    font-size: 1.2rem;
-  }
-}
-
-
-@media (min-width:1024px) {
-  footer {
-    font-size: 2.7rem;
-  }
-}
-
-@media (orientation:landscape) and (min-width:1024px) {
-  footer {
-    font-size: 2rem;
-  }
-}
