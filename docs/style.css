@@ -1,14 +1,11 @@
 /* logo color #231f20, #ffffff*/
-/* background colors:
-#608e8e
-#91a8a2 */
+
 
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* overflow: hidden; */
 }
 
 html {
@@ -90,7 +87,6 @@ header h1 {
 .row {
   position: absolute;
   height: 4px;
-  /* width: 100%; */
   width: 40px;
   background-color: #231f20;
   -webkit-transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
@@ -448,20 +444,74 @@ header .button {
 /* MEDIA - HEADER */
 /* PORTRAIT */
 @media (orientation: portrait) and (min-width: 360px) {
+  .burgerLine {
+    height: 70px;
+  }
+
+  .burger {
+    top: 7px;
+  }
+
+  .logo {
+    bottom: 340px;
+  }
+
+  header h1 {
+    bottom: 150px;
+    font-size: 3rem;
+  }
 
 }
 
+@media (orientation: portrait) and (min-width: 410px) {
+  .burgerLine {
+    height: 80px;
+  }
 
+  .burger {
+    top: 10px;
+  }
 
+  .row{
+    width: 50px;
+    height: 4px;
+  }
 
+  .row01 {
+    top: 26%;
+  }
+  
+  .row02 {
+    top: 48%;
+  }
+  
+  .row03 {
+    top: 71%;
+  }
+  
 
+  .logo {
+    bottom: 340px;
+  }
+
+  .logo img {
+    height: 90px;
+    width: 310px;
+  }
+
+  header h1 {
+    bottom: 150px;
+    font-size: 4rem;
+  }
+  
+  header .button{
+    font-size: 4.3rem;
+  }
+}
 
 /* LANDSCAPE - HEADER*/
 
-@media (orientation: landscape) and (min-width: 514px) {
-  
-
-}
+@media (orientation: landscape) and (min-width: 514px) {}
 
 
 /* SECTION ABOUT */
@@ -500,6 +550,25 @@ header .button {
 
 /* MEDIA - SECTION "ABOUT" */
 /* ORIENTATION - PORTRAIT */
+@media (orientation: portrait) and (min-width: 360px) {
+  .about article h2 {
+    font-size: 2.1rem;
+  }
+
+  .list li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+  .about article h2 {
+    font-size: 2.5rem;
+  }
+
+  .list li {
+    font-size: 1.7rem;
+  }
+}
 
 /* 
 SECTION - SERVICES */
@@ -585,7 +654,7 @@ SECTION - SERVICES */
 
 .buy h2 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.6rem;
   bottom: 0;
 }
@@ -612,7 +681,7 @@ SECTION - SERVICES */
 }
 
 .buyText li,
-.ozonText li{
+.ozonText li {
   list-style-type: square;
   margin-left: 20px;
 
@@ -656,19 +725,65 @@ MEDIA - ORIENTATION PORTRAIT */
 
 @media (min-width: 360px) and (orientation: portrait) {
 
+.services{
+  height: 140vh;
+}
 
+.dry h2,
+.ozon h2,
+.buy h2{
+  font-size: 1.7rem;
+}
+
+.buy div i{
+  font-size: 5rem;
+}
+
+.buy h2{
+  bottom: 2%;
+}
+.services .dryText,
+.services .ozonText,
+.services .buyText{
+  font-size: 1.7rem;
+}
+}
+
+@media (min-width: 410px) and (orientation: portrait) {
+
+  .services{
+    height: 120vh;
+  }
+  .dry h2,
+  .ozon h2,
+  .buy h2{
+    font-size: 1.9rem;
   }
 
- 
+  .buy h2{
+    bottom: 3%;
+  }
+  
+  .buy div i{
+    font-size: 6rem;
+  }
+
+  .services .dryText,
+  .services .ozonText,
+  .services .buyText{
+    font-size: 1.8rem;
+  }
+
+  
+}
+
+
 
 /* SECTION SERVICES
 MEDIA - ORIENTATION LANDSCAPE */
 
-@media (orientation: landscape) and (min-width: 533px) {
+@media (orientation: landscape) and (min-width: 533px) {}
 
- 
-  }
- 
 
 /* SECTION WORKS */
 
@@ -724,19 +839,32 @@ MEDIA - ORIENTATION LANDSCAPE */
 
 
 @media (min-width: 360px) and (orientation: portrait) {
- 
+  .works h2{
+    font-size: 3rem;
+  }
 
- 
+  .gallery p{
+    font-size: 1.9rem;
+  }
 }
 
+@media (min-width: 410px) and (orientation: portrait) {
+  .works h2{
+    font-size: 4rem;
+  }
+
+  .gallery .fas{
+    font-size: 6rem;
+  }
+
+  .gallery p{
+    font-size: 2.2rem;
+  }
+}
 
 /* orientation landscape - section works */
 
-@media (min-width: 533px) and (orientation: landscape) {
-  
-
-
-}
+@media (min-width: 533px) and (orientation: landscape) {}
 
 
 /* SECTION CONTACT */
@@ -745,7 +873,7 @@ MEDIA - ORIENTATION LANDSCAPE */
   height: 90vh;
   padding: 30px 10px;
   background-color: #2b337b;
- 
+
 }
 
 .contact h2 {
@@ -795,7 +923,7 @@ MEDIA - ORIENTATION LANDSCAPE */
 }
 
 .phone p,
-.email p{
+.email p {
   font-size: 1.8rem;
 }
 
@@ -803,7 +931,7 @@ MEDIA - ORIENTATION LANDSCAPE */
   position: relative;
   left: 190px;
   bottom: 25vh;
-  background-color:#2b337b;
+  background-color: #2b337b;
   color: #e6e6e6;
   border: none;
   font-size: 0.9rem;
@@ -816,16 +944,62 @@ MEDIA - ORIENTATION LANDSCAPE */
 
 /* SECTION CONTACT - ORIENTATION PORTRAIT */
 @media (orientation:portrait) and (min-width:360px) {
+  .contact{
+    padding: 40px 10px;
+  }
 
+  .contact h2{
+    font-size: 2.5rem;
+  }
+
+  .contact h3{
+    font-size: 2rem;
+  }
+
+  .contact p,
+.contact li{
+  font-size: 1.8rem;
 }
 
+.phone p,
+.email p {
+  font-size: 2rem;
+}
+}
 
+@media (orientation:portrait) and (min-width:410px) {
+  .contact{
+    padding: 50px 10px;
+  }
+
+  .contact h2{
+    font-size: 3.2rem;
+  }
+
+  .contact h3{
+    font-size: 2.7rem;
+  }
+
+  .contact p,
+.contact li{
+  font-size: 2rem;
+}
+
+.phone p,
+.email p {
+  font-size: 2.2rem;
+}
+
+.toTop{
+  left: 270px;
+  bottom: 20vh;
+  font-size: 1.1rem;
+}
+}
 
 /* SECTION CONTACT - ORIENTATIONA LANDSCAPE */
 
-@media (orientation:landscape) and (min-width:533px) {
-
-  }
+@media (orientation:landscape) and (min-width:533px) {}
 
 
 
@@ -846,15 +1020,18 @@ footer {
 
 /* FOOTER - ORIENTATION PORTRAIT */
 
-@media (orientation:portrait) and (min-width:410px) {
-  
+@media (orientation:portrait) and (min-width:360px) {
+  footer{
+    font-size: 1.4rem;
+  }
 }
 
-
+@media (orientation:portrait) and (min-width:360px) {
+  footer{
+    font-size: 1.6rem;
+  }
+}
 
 /* FOOTER - ORIENTATION LANDSCAPE */
 
-@media (orientation:landscape) and (min-width:533px) {
-  
-}
-
+@media (orientation:landscape) and (min-width:533px) {}
