@@ -616,6 +616,31 @@ header .button {
   }
 }
 
+@media (orientation: landscape) and (min-width: 854px) {
+  .logo{
+    top: 140px;
+  }
+  
+  .logo img {
+    height: 100px;
+    width: 320px;
+  }
+
+  header h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  
+  header .button{
+    font-size: 4rem;
+    bottom: 20px;
+  }
+
+  nav.menu ul li {
+    font-size: 3.3rem;
+  }
+}
+
 
 /* SECTION ABOUT */
 
@@ -715,6 +740,19 @@ ORIENTATION LANDSCAPE */
   }
 }
 
+@media (orientation: landscape) and (min-width: 854px) {
+  .about{
+    height: 110vh;
+  }
+  .about article h2 {
+    font-size: 3rem;
+  }
+
+  .list li {
+    font-size: 1.8rem;
+    margin:0 30px;
+  }
+}
 
 /*SECTION - SERVICES */
 
@@ -1038,6 +1076,47 @@ MEDIA - ORIENTATION LANDSCAPE */
   }
 }
 
+@media (orientation: landscape) and (min-width: 854px) {
+  .services{
+    height: 140vh;
+  }
+
+  .dry,
+.ozon,
+.buy {
+  height: 30vh;
+}
+
+  .dry h2,
+  .ozon h2,
+  .buy h2{
+    font-size: 2.3rem;
+  }
+
+  .dry div img,
+.ozon div img {
+  height: 19vh;
+}
+
+  .buy h2{
+    font-size: 2rem;
+    line-height: 2.2rem;
+    bottom: 1%;
+  }
+  
+  .buy div i{
+    font-size: 5.8rem;
+  }
+
+  .services .dryText,
+  .services .ozonText,
+  .services .buyText{
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+}
+
+
 /* SECTION WORKS */
 
 .works {
@@ -1172,6 +1251,19 @@ MEDIA - ORIENTATION LANDSCAPE */
   }
 }
 
+@media (min-width: 854px) and (orientation: landscape) {
+  .works h2{
+    font-size: 3.8rem;
+  }
+
+  .gallery .fas{
+    font-size: 6rem;
+  }
+
+  .gallery p{
+    font-size: 3rem;
+  }
+}
 
 /* SECTION CONTACT */
 .contact {
@@ -1422,6 +1514,36 @@ MEDIA - ORIENTATION LANDSCAPE */
       font-size: 0.9rem;
     }
     }
+
+    @media (orientation:landscape) and (min-width:854px) {
+      .contact{
+        padding: 20px 10px
+      }
+      .contact h2{
+        font-size: 2.8rem;
+      }
+    
+      .contact h3{
+        font-size: 2.4rem;
+        margin: 0;
+      }
+    
+      .contact p,
+      .contact li{
+      font-size: 2rem;
+    }
+    
+    .phone p,
+    .email p {
+      font-size: 2.2rem;
+    }
+    
+    .toTop{
+      left: 630px;
+      bottom: 18vh;
+      font-size: 1rem;
+    }
+    }
 /* FOOTER */
 
 footer {
@@ -1465,5 +1587,11 @@ footer {
 @media (orientation:landscape) and (min-width:640px) {
   footer{
     font-size: 1.3rem;
+  }
+}
+
+@media (orientation:landscape) and (min-width:854px) {
+  footer{
+    font-size: 1.5rem;
   }
 }
