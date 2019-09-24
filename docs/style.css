@@ -1555,6 +1555,7 @@ MEDIA - ORIENTATION LANDSCAPE */
 .email p {
   font-size: 2rem;
 }
+
 }
 
 @media (orientation:portrait) and (min-width:410px) {
@@ -1582,7 +1583,7 @@ MEDIA - ORIENTATION LANDSCAPE */
 }
 
 .toTop{
-  left: 270px;
+  left: 280px;
   bottom: 20vh;
   font-size: 1.1rem;
 }
