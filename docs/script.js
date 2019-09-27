@@ -1,54 +1,31 @@
-// HEADER
+//HEADER
 
-//HAMBURGER MENU
-const menu = document.querySelector(".burger");
-const nav = document.querySelector("nav");
-const burgerLine = document.querySelector(".burgerLine");
-const showMenu = () => {
-  nav.classList.toggle("active");
-  menu.classList.toggle("close");
-  burgerLine.classList.toggle("burgerLineMenu");
-};
+// 0: <section class="about">​
+// 1: <section class="services">​
+// 2: <section class="works">​
+// 3: <section class="contact"></section>
 
-menu.addEventListener("click", showMenu);
+const sections = [...document.querySelectorAll("section")]
+const menuElements = [...document.querySelectorAll(".menu li")];
 
-//MENU NAVIGATION
+let topPos = sections.map(section => section.offsetTop - 70);
 
-// services array
-// 0: section.buttons
-// 1: section.about
-// 2: section.services
-// 3: section.works
-// 4: section.contact
-const mainPage = document.querySelector("header");
-const services = [...document.querySelectorAll("section")];
-const menuElements = [...document.querySelectorAll(".menuList li")];
-
-let topPos = services.map((service) => service.offsetTop - 60);
-
-menuElements.forEach((menuElement, index) => {
-  menuElement.addEventListener("click", () => {
-    burgerLine.classList.remove("burgerLineMenu");
-    if (index === 0) {
-      window.scroll(0, 0);
-      menu.classList.toggle("close");
-    } else if (index === 1) {
-      window.scroll(0, topPos[0]);
-      menu.classList.toggle("close");
-    } else if (index === 2 || index === 3 || index === 4) {
-      window.scroll(0, topPos[1]);
-      menu.classList.toggle("close");
-    } else if (index === 5) {
-      window.scroll(0, topPos[2]);
-      menu.classList.toggle("close");
-    } else if (index === 6) {
-      window.scroll(0, topPos[3]);
-      menu.classList.toggle("close");
+menuElements.forEach((menuElement,index) => {
+  menuElement.addEventListener("click",() =>{
+    if(index === 0){
+      window.scroll(0,topPos[0])
+    }else if(index === 1){
+      window.scroll(0,topPos[1])
+    }else if(index === 2){
+      window.scroll(0,topPos[2])
+    }else if(index === 3){
+      window.scroll(0,topPos[3])
     }
+  })
+})
 
-    nav.classList.remove("active");
-  });
-});
+const list = document.querySelector(".list")
+let parent = list.offsetTop
 
 // MAIN PAGE BUTTON EVENT
 const button = document.querySelector(".button");
@@ -205,7 +182,23 @@ const worksImages = [
   "agri1.jpg",
   "agri2.jpg",
   "agri3.jpg",
-  "agri4.jpg"
+  "agri4.jpg",
+  "AGD1.jpeg",
+  "AGD2.jpeg",
+  "AGD3.jpeg",
+  "AGD4.jpeg",
+  "excavator-fire1.jpeg",
+  "excavator-fire2.jpeg",
+  "excavator-fire3.jpeg",
+  "excavator-fire4.jpeg",
+  "RTV1.jpeg",
+  "RTV2.jpeg",
+  "RTV3.jpeg",
+  "RTV4.jpeg",
+  "RTV5.jpeg",
+  "RTV6.jpeg",
+  "RTV7.jpeg",
+  "telehandler.jpeg"
 ];
 
 const leftAngle = document.querySelector(".fa-angle-left");
@@ -214,23 +207,30 @@ const image = document.querySelector(".image");
 const textWork = document.querySelector(".gallery p");
 
 image.style.backgroundImage = `url("img/${worksImages[0]}")`;
-textWork.textContent = "Odzysk części po naprawie kombajnu";
+textWork.textContent = "Maszyna rolnicza po wypadku komunikacyjnym";
 
 let index = 0;
 
 //text change function
 const changeText = () => {
   if (index >= 0 && index < 5) {
-    textWork.textContent = "Odzysk części po naprawie kombajnu";
+    textWork.textContent = "Maszyna rolnicza po wypadku komunikacyjnym";
   } else if (index >= 5 && index <= 9) {
-    textWork.textContent = "Renowacja siłowni po zalaniu";
+    textWork.textContent = "Wyposażenie siłowni po zalaniu";
   } else if (index >= 10 && index <= 12) {
-    textWork.textContent = "Odzysk części po naprawie koparki";
+    textWork.textContent = "Maszyna po wypadku komunikacyjnym";
   } else if (index >= 13 && index <= 16) {
-    textWork.textContent = "Oddzysk części maszyn po pożarze ";
-  }
+    textWork.textContent = "Maszyny rolnicze po pożarze";
+  }else if (index >= 17 && index <= 20) {
+    textWork.textContent = "AGD po upadku w magazynie";
+  }else if (index >= 21 && index <= 24) {
+    textWork.textContent = "Koparka po pożarze"
+  }else if (index >= 25 && index <= 31) {
+      textWork.textContent = "RTV po zalaniu magazynu"
+    }else if (index===32) {
+      textWork.textContent = "Ładowarka teleskopowa po szkodzie komunikacyjnej"
 };
-
+}
 //right angle
 rightAngle.addEventListener("click", () => {
   if (index < worksImages.length - 1) {
