@@ -385,48 +385,34 @@ header .button {
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
-  .burgerLine {
-    height: 80px;
-  }
-
-  .burger {
-    top: 10px;
-  }
-
-  .row {
-    width: 50px;
-    height: 4px;
-  }
-
-  .row01 {
-    top: 26%;
-  }
-
-  .row02 {
-    top: 48%;
-  }
-
-  .row03 {
-    top: 71%;
-  }
-
-
-  .logo {
-    bottom: 340px;
+  .headerContact p {
+    font-size: 1.6rem;
   }
 
   .logo img {
-    height: 90px;
-    width: 310px;
+    height: 100px;
+    width: 350px;
+  }
+
+  header .logo {
+    top: 280px;
   }
 
   header h1 {
-    bottom: 150px;
-    font-size: 4rem;
+    top: 110px;
+    font-size: 2.1rem;
+    line-height: 3.5rem;
   }
 
-  header .button {
-    font-size: 4.3rem;
+  header h1 span {
+    font-size: 2rem;
+  }
+
+  .menu ul{
+    bottom: 190px
+  }
+  .menu ul li{
+    font-size: 2rem;
   }
 }
 
