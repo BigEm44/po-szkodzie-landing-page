@@ -51,7 +51,6 @@ header .logo {
   left: 50%;
   top: 240px;
   transform: translateX(-50%);
-
 }
 
 .logo img {
@@ -357,23 +356,32 @@ header .button {
 /* MEDIA - HEADER */
 /* PORTRAIT */
 @media (orientation: portrait) and (min-width: 360px) {
-  .burgerLine {
-    height: 70px;
+  .headerContact p {
+    font-size: 1.6rem;
   }
 
-  .burger {
-    top: 7px;
+  .logo img {
+    height: 90px;
+    width: 300px;
   }
 
-  .logo {
-    bottom: 340px;
+  header .logo {
+    top: 300px;
   }
 
   header h1 {
-    bottom: 150px;
-    font-size: 3rem;
+    top: 140px;
+    font-size: 2.1rem;
+    line-height: 3.5rem;
   }
 
+  header h1 span {
+    font-size: 2rem;
+  }
+
+  .menu ul li{
+    font-size: 1.7rem;
+  }
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
@@ -620,7 +628,6 @@ header .button {
   height: 180vh;
   text-align: justify;
   padding: 20px 10px;
-  font-size: 1.5rem;
   background-color: #f0eee1;
 }
 
@@ -655,12 +662,23 @@ header .button {
 /* MEDIA - SECTION "ABOUT" */
 /* ORIENTATION - PORTRAIT */
 @media (orientation: portrait) and (min-width: 360px) {
+  .about article{
+    height: 170vh;
+  }
+
+  .about article p {
+    position: relative;
+    left: 0;
+    top: 10px;
+    font-size: 1.6rem;
+  }
+  
   .about article h2 {
-    font-size: 2.1rem;
+    font-size: 1.6rem;
   }
 
   .list li {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -927,7 +945,7 @@ MEDIA - ORIENTATION PORTRAIT */
 @media (min-width: 360px) and (orientation: portrait) {
 
   .services {
-    height: 140vh;
+    height: 130vh;
   }
 
   .dry h2,
@@ -947,7 +965,7 @@ MEDIA - ORIENTATION PORTRAIT */
   .services .dryText,
   .services .ozonText,
   .services .buyText {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1261,9 +1279,9 @@ MEDIA - ORIENTATION LANDSCAPE */
 .gallery .fas {
   position: absolute;
   bottom: 10%;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 4.5rem;
-  color:  #f0582b;
+  cursor: pointer;
 }
 
 .gallery .fa-angle-left {
@@ -1278,11 +1296,12 @@ MEDIA - ORIENTATION LANDSCAPE */
 
 @media (min-width: 360px) and (orientation: portrait) {
   .works h2 {
-    font-size: 3rem;
+    font-size: 3.1rem;
   }
 
   .gallery p {
     font-size: 1.9rem;
+    line-height: 2.1rem;
   }
 }
 
