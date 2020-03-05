@@ -1,6 +1,5 @@
 /* logo color #231f20, #ffffff*/
 
-
 * {
   margin: 0;
   padding: 0;
@@ -18,15 +17,12 @@ body {
   background-color: #f0eee1;
 }
 
-
 /* mobile */
-
 /* HEADER */
 
 header {
   height: 100vh;
   background-color: #f0eee1;
-
 }
 
 header h1 {
@@ -41,44 +37,35 @@ header h1 {
   color: #f0582b;
   animation: headerFirstText 2.5s ease-in-out;
 }
-
 header h1 span {
   font-size: 1.7rem;
 }
-
 header .logo {
   position: absolute;
   left: 50%;
   top: 240px;
   transform: translateX(-50%);
 }
-
 .logo img {
   height: 70px;
   width: 260px;
 }
-
-
-
 .headerContact {
   position: fixed;
   height: 70px;
   width: 100%;
-  background-color: #f0eee1;
+  background-color: #2b337b;
   z-index: 10;
   padding: 10px 0 15px 5px;
 }
-
 .headerContact p {
   font-size: 1.5rem;
-  color: #2b337b;
+  color: #f0eee1;
 }
-
 .headerContact p a {
   text-decoration: none;
-  color: #2b337b;
+  color: #f0eee1;
 }
-
 
 /* MENU */
 .menu ul {
@@ -93,7 +80,6 @@ header .logo {
   color: #2b337b;
   cursor: pointer;
 }
-
 
 header .button {
   position: absolute;
