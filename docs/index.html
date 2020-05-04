@@ -10,39 +10,41 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        Od 2012 roku zajmujemy się:<br>
-        <span>- wykupem mienia po szkodach<br>
+
+  <header class="header">
+    <div class="header__contact">
+      <p>Telefon: 721 599 806 </p>
+      <p>E-mail:
+        <a href="biuro@po-szkodzie.pl">biuro@po-szkodzie.pl</a>
+      </p>
+    </div>
+    <div class="header__main">
+      <div class="header__title">
+        <h1>
+          Od 2012 roku zajmujemy się:<br>
+          <span>- wykupem mienia po szkodach<br>
           - osuszaniem<br>
           - ozonowaniem<br>
-        </span>
-      </h1>
-      <div class="logo">
+          </span>
+        </h1>
+      </div>
+      <div class="header__logo">
         <img src="img/logo czarne panorama.png" alt="logo Po-szkodzie.pl" />
-      </div>
-      <div class="button"><i class="fas fa-angle-down"></i></div>
-      <div class="headerContact">
-        <p>Telefon: 721 599 806 </p>
-        <p>E-mail:
-          <a href="biuro@po-szkodzie.pl">biuro@po-szkodzie.pl</a>
-        </p>
-      </div>
-  </div>
-  </div>
-  <nav class="menu">
-    <ul>
-      <li>O nas</li>
-      <li>Usługi</li>
-      <li>Realizacje</li>
-      <li>Kontakt</li>
-    </ul>
-  </nav>
+      </div>  
+      <nav class="header__menu">
+        <ul>
+          <li>O nas</li>
+          <li>Usługi</li>
+          <li>Realizacje</li>
+          <li>Kontakt</li>
+        </ul>
+      </nav>
+      <div class="header__arrow"><i class="fas fa-angle-down"></i></div>
+    </div>   
   </header>
   <main>
     <section class="about">
@@ -56,7 +58,7 @@
           zakres usług o
           ozonowanie oraz osuszanie kondensacyjne. </p>
         <h2>PO-SZKODZIE.PL świadczy usługi dla:</h2>
-        <ul class="list">
+        <ul class="about__list">
           <li>
             <span> W zakresie zagospodorowania mienia po szkodzie</span> -
             świadczymy usługi wykupu mienia dotkniętego szkodą dla
@@ -90,23 +92,23 @@
       </article>
     </section>
     <section class="services">
-      <div class="servicesHeader">
-        <div class="buy">
+      <div class="services__header">
+        <div class="services__buy">
           <div><i class="far fa-handshake"></i></div>
-          <h2>Wykup odsprzedaż mienia</h2>
+          <h2>Wykup / Odsprzedaż mienia</h2>
         </div>
-        <div class="dry">
+        <div class="services__dry">
           <div><img src="img/airDryer.png" alt="air dryer" /></div>
           <h2>Osuszanie</h2>
         </div>
-        <div class="ozon">
+        <div class="services__ozon">
           <div><img src="img/ozonier.png" alt="ozonier" /></div>
           <h2>Ozonowanie</h2>
         </div>
       </div>
-      <article class="buyText">
+      <article class="services__buyText">
         <p>
-          Firma PO-SZKODZIE.PL może Państwu zaproponować wykup mienia, które uległo uszkodzeniu w wyniku nagłych
+          <span>Firma PO-SZKODZIE.PL może Państwu zaproponować wykup mienia</span>, które uległo uszkodzeniu w wyniku nagłych
           zdarzeń losowych np. powódź, pożar, zalanie, kradzież, niewłaściwy transport.<br>
           Na podstawie przedstawionej przez Klienta dokumentacji, dotyczącej uszkodzonego mienia,
           przygotowujemy ofertę jego wykupu. Jest ona ważna przez 30 dni od momentu otrzymania. Po
@@ -115,17 +117,17 @@
           Przygotowujemy oferty obejmujące wykup i zagospodarowanie mienia z niemal każdej branży, w
           szczególności:
           <ul>
-            <li>elektronika: sprzęt RTV i AGD, telefony i komputery</li>
-            <li>maszyny budowlane</li>
-            <li>maszyny rolnicze</li>
-            <li>pozostałe środki obrotowe</li>
-            <li>produkty i półprodukty spożywcze oraz przemysłowe</li>
+            <li><span>elektronika: sprzęt RTV i AGD, telefony i komputery</span></li>
+            <li><span>maszyny budowlane</span></li>
+            <li><span>maszyny rolnicze</span></li>
+            <li><span>pozostałe środki obrotowe</span></li>
+            <li><span>produkty i półprodukty spożywcze oraz przemysłowe</span></li>
           </ul>
         </p>
       </article>
-      <article class="dryText">
+      <article class="services__dryText">
         <p>
-          Wychodząc naprzeciw problemowi nadmiernej wilgoci, między innymi
+          Wychodząc naprzeciw problemowi <span>nadmiernej wilgoci</span>, między innymi
           we wnętrzach budynków, firma PO-SZKODZIE.PL w swoim zakresie
           usług, oferuje osuszanie z wykorzystaniem technologii
           kondensacyjnej.<br> Głównymi atutami tej metody jest jej wysoka
@@ -133,7 +135,7 @@
           bezinwazyjność oraz brak jakiegokolwiek ryzyka stosowania.<br>
           Zjawiskiem, które odgrywa kluczową rolę w proponowanej przez naszą firmę metodzie
           osuszania,
-          jest kondensacja, czyli skraplanie pary wodnej. Osuszacze kondensacyjne mają za zadanie w
+          jest kondensacja, czyli skraplanie pary wodnej. <span>Osuszacze kondensacyjne</span> mają za zadanie w
           sposób naturalny przyspieszyć proces schnięcia. Zmniejszanie wilgotności we wnętrzu urządzenia,
           następuje poprzez spadek temperatury poniżej punktu rosy (temperatura skraplania gazów).
           Oziębione powietrze skrapla się, a zgromadzona w zbiorniku woda odprowadzana jest bezpośrednio
@@ -142,25 +144,25 @@
           Cały powyższy proces trwa do momentu osiągnięcia wymaganego poziomu wilgotności.
         </p>
       </article>
-      <article class="ozonText">
+      <article class="services__ozonText">
         <p>
-          Jest to niezwykle skuteczna i niezawodna metoda trwałej
-          dezynfekcji. Pozwala na bezinwazyjne wyeliminowanie z otoczenia
+          <span>Jest to niezwykle skuteczna i niezawodna metoda trwałej
+          dezynfekcji</span>. Pozwala na bezinwazyjne wyeliminowanie z otoczenia
           groźnych dla zdrowia drobnoustrojów (wirusów i bakterii), roztoczy
           i innych alergenów oraz grzybów i pleśni. Umożliwia także
           całkowitą neutralizację niepożądanych zapachów.
           <ul>
-            <li>Branży motoryzacyjnej – ozonowanie wnętrz samochodów osobowych oraz
+            <li><span>Branży motoryzacyjnej</span> – ozonowanie wnętrz samochodów osobowych oraz
               ciężarowych, odgrzybianie
               klimatyzacji.</li>
-            <li> instytucji publicznych – przedszkola, szkoły,
+            <li><span>instytucji publicznych</span> – przedszkola, szkoły,
               biblioteki, biura, hotele, restauracje, gabinety lekarskie, szpitale,
               magazyny, siłownie, przedsiębiorstwa.</li>
-            <li>Budynków mieszkalnych – ozonowanie stanowi niezastąpione narzędzie w walce z szkodliwymi
+            <li><span>Budynków mieszkalnych</span> – ozonowanie stanowi niezastąpione narzędzie w walce z szkodliwymi
               drobnoustrojami, pleśniami, grzybami oraz trudnymi do zlikwidowania
               zapachami (dym papierosowy, zwierzęta). </li>
-            <li>Miejsc dotkniętych zalaniem,
-              podtopieniem i pożarem – ozonowanie skutecznie zlikwiduje uciążliwy zapach
+            <li><span>Miejsc dotkniętych zalaniem,
+              podtopieniem i pożarem</span> – ozonowanie skutecznie zlikwiduje uciążliwy zapach
               stęchlizny oraz spalenizny, zapobiegnie powstawaniu pleśni i zagrzybienia
               ścian.</li>
           </ul>
@@ -169,10 +171,12 @@
     </section>
     <section class="works">
       <h2>Nasze Realizacje</h2>
-      <article class="gallery">
-        <div class="image">
+      <article class="works__gallery">
+        <div class="works__gallery--image">
+          <div class="works__gallery--arrow">
           <i class="fas fa-angle-left"></i>
           <i class="fas fa-angle-right"></i>
+        </div>
         </div>
         <p></p>
       </article>
@@ -182,32 +186,32 @@
         Masz pytania?<br />
         Skontaktuj się z nami
       </h2>
-      <div class="hours">
+      <div class="contact__hours">
         <h3>Godziny otwarcia</h3>
         <p>
           Jesteśmy do Państwa dyspozycji od poniedziałku do piątku w
           godzinach od 8 do 19
         </p>
       </div>
-      <div class="adress">
+      <div class="contact__adress">
         <h3>Siedziba firmy</h3>
         <p>Chwalborzyce 40</p>
         <p>99-140 Świnice</p>
       </div>
-      <div class="phone">
+      <div class="contact__phone">
         <h3>Telefon </h3>
         <p>721 599 806</p>
       </div>
-      <div class="email">
+      <div class="contact__email">
         <h3>E-mail</h3>
         <p>
           <a href="biuro@po-szkodzie.pl">biuro@po-szkodzie.pl</a>
         </p>
       </div>
-      <button class="toTop">Wróć do góry</button>
+      <button class="contact__toTop">Wróć do góry</button>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     Copyright &copy 2019. All Rights Reserved. Created by BigEm44
   </footer>
   </div>

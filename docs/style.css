@@ -1,9 +1,9 @@
-:root{
---white: #f0eee1;
---orange: #f0582b;
---black: #231f20;
---blue: #2b337b;
---yellow: #ffc228;
+:root {
+  --white: #f0eee1;
+  --orange: #f0582b;
+  --black: #231f20;
+  --blue: #2b337b;
+  --yellow: #ffc228;
 }
 
 * {
@@ -113,7 +113,7 @@ header .button {
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -123,10 +123,9 @@ header .button {
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
-
 
 /* BUTTON-ANGLE ANIMATION - HEADER */
 @-webkit-keyframes arrow {
@@ -372,7 +371,7 @@ header .button {
   .menu ul {
     bottom: 80px;
   }
-  .menu ul li{
+  .menu ul li {
     font-size: 2rem;
   }
 }
@@ -401,10 +400,10 @@ header .button {
     font-size: 2rem;
   }
 
-  .menu ul{
-    bottom: 80px
+  .menu ul {
+    bottom: 80px;
   }
-  .menu ul li{
+  .menu ul li {
     font-size: 2rem;
   }
 }
@@ -619,14 +618,13 @@ header .button {
 
 .about article p span {
   font-weight: bold;
- 
 }
 
 .about article h2 {
   font-size: 1.4rem;
   padding: 20px 0 10px 0;
   font-weight: bold;
- }
+}
 
 .list li {
   margin-left: 10px;
@@ -636,12 +634,12 @@ header .button {
 
 .list span {
   font-weight: bold;
-  }
+}
 
 /* MEDIA - SECTION "ABOUT" */
 /* ORIENTATION - PORTRAIT */
 @media (orientation: portrait) and (min-width: 360px) {
-  .about article{
+  .about article {
     height: 170vh;
   }
 
@@ -651,7 +649,7 @@ header .button {
     top: 10px;
     font-size: 1.6rem;
   }
-  
+
   .about article h2 {
     font-size: 1.6rem;
   }
@@ -763,7 +761,6 @@ ORIENTATION LANDSCAPE */
     font-size: 2rem;
     margin: 0 30px;
   }
-
 }
 
 /*SECTION - SERVICES */
@@ -771,7 +768,6 @@ ORIENTATION LANDSCAPE */
 .services {
   margin: 0 auto;
   height: 150vh;
-
 }
 
 .servicesHeader {
@@ -847,7 +843,6 @@ ORIENTATION LANDSCAPE */
   transform: translateX(-50%);
   font-size: 1.5rem;
   text-transform: uppercase;
-
 }
 
 .buy h2 {
@@ -882,7 +877,6 @@ ORIENTATION LANDSCAPE */
 .ozonText li {
   list-style-type: square;
   margin-left: 20px;
-
 }
 
 .services .dryText .more,
@@ -897,13 +891,11 @@ ORIENTATION LANDSCAPE */
 .buyShowMoreText,
 .ozonShowMoreText {
   display: none;
-
 }
 
 .activeShowMoreText {
   display: block;
 }
-
 
 .ozonText,
 .dryText {
@@ -922,7 +914,6 @@ ORIENTATION LANDSCAPE */
 MEDIA - ORIENTATION PORTRAIT */
 
 @media (min-width: 360px) and (orientation: portrait) {
-
   .services {
     height: 130vh;
   }
@@ -949,7 +940,6 @@ MEDIA - ORIENTATION PORTRAIT */
 }
 
 @media (min-width: 410px) and (orientation: portrait) {
-
   .services {
     height: 120vh;
   }
@@ -976,7 +966,6 @@ MEDIA - ORIENTATION PORTRAIT */
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
-
   .services {
     height: 120vh;
   }
@@ -1009,10 +998,7 @@ MEDIA - ORIENTATION PORTRAIT */
   .services .ozonText li,
   .services .buyText li {
     margin-left: 35px;
-
   }
-
-
 }
 
 /* SECTION SERVICES
@@ -1216,8 +1202,6 @@ MEDIA - ORIENTATION LANDSCAPE */
   }
 }
 
-
-
 /* SECTION WORKS */
 
 .works {
@@ -1265,13 +1249,11 @@ MEDIA - ORIENTATION LANDSCAPE */
 
 .gallery .fa-angle-left {
   left: 15%;
-  
 }
 
 .gallery .fa-angle-right {
   right: 15%;
 }
-
 
 @media (min-width: 360px) and (orientation: portrait) {
   .works h2 {
@@ -1400,14 +1382,12 @@ MEDIA - ORIENTATION LANDSCAPE */
   height: 90vh;
   padding: 30px 10px;
   background-color: #2b337b;
-
 }
 
 .contact h2 {
   font-size: 2.1rem;
   color: #f0582b;
   font-weight: 500;
-
 }
 
 .contact h3 {
@@ -1415,7 +1395,6 @@ MEDIA - ORIENTATION LANDSCAPE */
   font-size: 1.7rem;
   color: #f0582b;
   font-weight: 500;
-
 }
 
 .contact p,
@@ -1423,7 +1402,6 @@ MEDIA - ORIENTATION LANDSCAPE */
   font-size: 1.4rem;
   font-weight: 500;
   color: #e6e6e6;
-
 }
 
 .contact li {
@@ -1468,9 +1446,8 @@ MEDIA - ORIENTATION LANDSCAPE */
   cursor: pointer;
 }
 
-
 /* SECTION CONTACT - ORIENTATION PORTRAIT */
-@media (orientation:portrait) and (min-width:360px) {
+@media (orientation: portrait) and (min-width: 360px) {
   .contact {
     padding: 10px 10px;
   }
@@ -1493,10 +1470,9 @@ MEDIA - ORIENTATION LANDSCAPE */
   .email p {
     font-size: 2rem;
   }
-
 }
 
-@media (orientation:portrait) and (min-width:410px) {
+@media (orientation: portrait) and (min-width: 410px) {
   .contact {
     padding: 10px 10px;
   }
@@ -1527,7 +1503,7 @@ MEDIA - ORIENTATION LANDSCAPE */
   }
 }
 
-@media (orientation:portrait) and (min-width:768px) {
+@media (orientation: portrait) and (min-width: 768px) {
   .contact h2 {
     font-size: 5.2rem;
   }
@@ -1551,12 +1527,11 @@ MEDIA - ORIENTATION LANDSCAPE */
     bottom: 18vh;
     font-size: 1.6rem;
   }
-
 }
 
 /* SECTION CONTACT - ORIENTATIONA LANDSCAPE */
 
-@media (orientation:landscape) and (min-width:480px) {
+@media (orientation: landscape) and (min-width: 480px) {
   .contact {
     height: 120vh;
     padding: 5px 10px;
@@ -1588,7 +1563,7 @@ MEDIA - ORIENTATION LANDSCAPE */
   }
 }
 
-@media (orientation:landscape) and (min-width:640px) {
+@media (orientation: landscape) and (min-width: 640px) {
   .contact h2 {
     font-size: 2.4rem;
   }
@@ -1615,9 +1590,9 @@ MEDIA - ORIENTATION LANDSCAPE */
   }
 }
 
-@media (orientation:landscape) and (min-width:854px) {
+@media (orientation: landscape) and (min-width: 854px) {
   .contact {
-    padding: 20px 10px
+    padding: 20px 10px;
   }
 
   .contact h2 {
@@ -1646,9 +1621,9 @@ MEDIA - ORIENTATION LANDSCAPE */
   }
 }
 
-@media (orientation:landscape) and (min-width:1024px) {
+@media (orientation: landscape) and (min-width: 1024px) {
   .contact {
-    padding: 80px 10px
+    padding: 80px 10px;
   }
 
   .contact h2 {
@@ -1708,14 +1683,13 @@ MEDIA - ORIENTATION LANDSCAPE */
     bottom: 12vh;
     font-size: 1.1rem;
   }
-
 }
 
 /* FOOTER */
 
 footer {
   margin: 0 auto;
-  height: 5vh;
+  height: 10px;
   background-color: #231f20;
   color: white;
   text-align: center;
@@ -1725,19 +1699,19 @@ footer {
 
 /* FOOTER - ORIENTATION PORTRAIT */
 
-@media (orientation:portrait) and (min-width:360px) {
+@media (orientation: portrait) and (min-width: 360px) {
   footer {
     font-size: 1.4rem;
   }
 }
 
-@media (orientation:portrait) and (min-width:410px) {
+@media (orientation: portrait) and (min-width: 410px) {
   footer {
     font-size: 1.6rem;
   }
 }
 
-@media (orientation:portrait) and (min-width:768px) {
+@media (orientation: portrait) and (min-width: 768px) {
   footer {
     font-size: 2.6rem;
   }
@@ -1745,25 +1719,25 @@ footer {
 
 /* FOOTER - ORIENTATION LANDSCAPE */
 
-@media (orientation:landscape) and (min-width:480px) {
+@media (orientation: landscape) and (min-width: 480px) {
   footer {
     font-size: 1.2rem;
   }
 }
 
-@media (orientation:landscape) and (min-width:640px) {
+@media (orientation: landscape) and (min-width: 640px) {
   footer {
     font-size: 1.3rem;
   }
 }
 
-@media (orientation:landscape) and (min-width:854px) {
+@media (orientation: landscape) and (min-width: 854px) {
   footer {
     font-size: 1.5rem;
   }
 }
 
-@media (orientation:landscape) and (min-width:1024px) {
+@media (orientation: landscape) and (min-width: 1024px) {
   footer {
     font-size: 1.9rem;
   }
