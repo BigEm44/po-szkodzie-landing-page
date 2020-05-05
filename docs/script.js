@@ -5,8 +5,18 @@
 // 3: <section class="contact"></section>
 
 const sections = [...document.querySelectorAll('section')];
+const headerElements = [
+  ...document.querySelectorAll('.header__contact--desktop li'),
+];
 const menuElements = [...document.querySelectorAll('.header__menu li')];
 let topPos = sections.map((section) => section.offsetTop - 70);
+console.log(headerElements);
+
+headerElements.forEach((headerElement, index) => {
+  headerElement.addEventListener('click', () => {
+    window.scroll(0, topPos[1]);
+  });
+});
 
 menuElements.forEach((menuElement, index) => {
   menuElement.addEventListener('click', () => {

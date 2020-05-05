@@ -59,10 +59,17 @@ body {
         justify-content: space-around;
         align-items: center;
         width: 64vw;
-        p {
+        li {
+          list-style: none;
           font-size: 2.7rem;
           text-transform: uppercase;
           letter-spacing: 0.3rem;
+          color: $white;
+          cursor: pointer;
+          &:hover {
+            color: $yellow;
+            transition: 0.3s;
+          }
         }
       }
     }
@@ -81,7 +88,7 @@ body {
       position: fixed;
       margin-top: 0;
       width: 30vw;
-      height: 100vh;
+      height: 90vh;
       z-index: 30;
     }
   }
@@ -189,8 +196,9 @@ body {
   text-align: justify;
   padding: 20px 10px;
   @media (min-width: 1024px) {
-    margin: 70px 0 80px 35vw;
+    margin: 70px 0 90px 35vw;
     width: 64.5vw;
+    padding: 135px 0;
   }
   h2 {
     padding: 20px 0 10px 0;
@@ -201,6 +209,9 @@ body {
     @media (min-width: 768px) {
       font-size: 2.2rem;
     }
+    @media (min-width: 768px) {
+      font-size: 2.4rem;
+    }
   }
   p {
     font-size: 1.4rem;
@@ -210,7 +221,11 @@ body {
     @media (min-width: 768px) {
       font-size: 1.8rem;
     }
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
     span {
+      font-size: 2.1rem;
       font-weight: bold;
     }
   }
@@ -226,6 +241,7 @@ body {
     }
     list-style-type: square;
     span {
+      font-size: 1.9rem;
       font-weight: bold;
     }
   }
@@ -233,9 +249,10 @@ body {
 
 .services {
   margin-bottom: 50px;
+  padding: 60px 0;
   width: 100vw;
   @media (min-width: 1024px) {
-    margin: 0 0 80px 35vw;
+    margin: 100px 0 80px 35vw;
     width: 64.5vw;
   }
   &__header {
@@ -274,6 +291,9 @@ body {
       @media (min-width: 500px) and (orientation: landscape) {
         font-size: 1.9rem;
       }
+      @media (min-width: 768px) {
+        font-size: 2.1rem;
+      }
     }
   }
   &__buy {
@@ -288,6 +308,10 @@ body {
       }
       @media (min-width: 500px) and (orientation: landscape) {
         font-size: 5rem;
+      }
+      @media (min-width: 1024px) {
+        padding: 20px 0;
+        font-size: 5.5rem;
       }
     }
   }
@@ -311,6 +335,10 @@ body {
     }
     @media (min-width: 768px) {
       font-size: 1.8rem;
+    }
+    @media (min-width: 1024px) {
+      padding: 20px;
+      font-size: 1.9rem;
     }
     li {
       list-style-type: square;

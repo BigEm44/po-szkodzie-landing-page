@@ -89,10 +89,18 @@ body {
             align-items: center;
     width: 64vw;
   }
-  .header__contact--desktop p {
+  .header__contact--desktop li {
+    list-style: none;
     font-size: 2.7rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
+    color: #f0eee1;
+    cursor: pointer;
+  }
+  .header__contact--desktop li:hover {
+    color: #ffc228;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
@@ -125,7 +133,7 @@ body {
     position: fixed;
     margin-top: 0;
     width: 30vw;
-    height: 100vh;
+    height: 90vh;
     z-index: 30;
   }
 }
@@ -295,8 +303,9 @@ body {
 
 @media (min-width: 1024px) {
   .about {
-    margin: 70px 0 80px 35vw;
+    margin: 70px 0 90px 35vw;
     width: 64.5vw;
+    padding: 135px 0;
   }
 }
 
@@ -317,6 +326,12 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .about h2 {
+    font-size: 2.4rem;
+  }
+}
+
 .about p {
   font-size: 1.4rem;
 }
@@ -333,7 +348,14 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .about p {
+    font-size: 2rem;
+  }
+}
+
 .about p span {
+  font-size: 2.1rem;
   font-weight: bold;
 }
 
@@ -357,17 +379,19 @@ body {
 }
 
 .about__list span {
+  font-size: 1.9rem;
   font-weight: bold;
 }
 
 .services {
   margin-bottom: 50px;
+  padding: 60px 0;
   width: 100vw;
 }
 
 @media (min-width: 1024px) {
   .services {
-    margin: 0 0 80px 35vw;
+    margin: 100px 0 80px 35vw;
     width: 64.5vw;
   }
 }
@@ -438,6 +462,12 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .services__dry h2, .services__ozon h2, .services__buy h2 {
+    font-size: 2.1rem;
+  }
+}
+
 .services__buy {
   text-align: center;
   line-height: 2rem;
@@ -458,6 +488,13 @@ body {
 @media (min-width: 500px) and (orientation: landscape) {
   .services__buy i {
     font-size: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__buy i {
+    padding: 20px 0;
+    font-size: 5.5rem;
   }
 }
 
@@ -487,6 +524,13 @@ body {
 @media (min-width: 768px) {
   .services__dryText, .services__ozonText, .services__buyText {
     font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__dryText, .services__ozonText, .services__buyText {
+    padding: 20px;
+    font-size: 1.9rem;
   }
 }
 
