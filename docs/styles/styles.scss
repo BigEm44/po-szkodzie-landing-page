@@ -22,18 +22,25 @@ body {
 .header {
   &__contact {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     top: 0;
+    display: flex;
+    justify-content: space-between;
     width: 100vw;
     height: 70px;
     z-index: 10;
     padding: 10px 0 15px 10px;
     background-color: $blue;
-
+    @media (min-width: 1024px) {
+      justify-content: space-between;
+    }
+    &--mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     p {
       font-size: 1.6rem;
+      letter-spacing: 0.3px;
       color: $white;
       @media (min-width: 360px) {
         font-size: 1.8rem;
@@ -45,6 +52,20 @@ body {
         color: $white;
       }
     }
+    &--desktop {
+      display: none;
+      @media (min-width: 1024px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 64vw;
+        p {
+          font-size: 2.7rem;
+          text-transform: uppercase;
+          letter-spacing: 0.3rem;
+        }
+      }
+    }
   }
   &__main {
     display: flex;
@@ -53,13 +74,15 @@ body {
     justify-content: space-evenly;
     height: calc(100vh - 70px);
     margin-top: 70px;
-    @media (min-width: 1024px) {
-      position: fixed;
-      width: 30vw;
-      z-index: 30;
-    }
     @media (min-width: 500px) and(orientation:landscape) {
       height: 140vh;
+    }
+    @media (min-width: 1024px) {
+      position: fixed;
+      margin-top: 0;
+      width: 30vw;
+      height: 100vh;
+      z-index: 30;
     }
   }
   &__title {
@@ -67,6 +90,7 @@ body {
       text-transform: uppercase;
       font-size: 1.8rem;
       font-weight: 400;
+      letter-spacing: 0.3px;
       line-height: 3.5rem;
       color: #f0582b;
       animation: headerFirstText 2.5s ease-in-out;
@@ -87,6 +111,9 @@ body {
       @media (min-width: 800px) and(orientation:landscape) {
         font-size: 2.5rem;
         line-height: 3.5rem;
+      }
+      @media (min-width: 1024px) {
+        font-size: 2.4rem;
       }
     }
   }
@@ -110,6 +137,10 @@ body {
         height: 80px;
         width: 380px;
       }
+      @media (min-width: 1024px) {
+        height: 80px;
+        width: 270px;
+      }
     }
   }
   &__menu {
@@ -119,6 +150,7 @@ body {
       list-style: none;
       li {
         font-size: 1.5rem;
+        letter-spacing: 0.3px;
         color: #2b337b;
         cursor: pointer;
         @media (min-width: 360px) {
@@ -132,6 +164,9 @@ body {
         }
         @media (min-width: 800px) and(orientation:landscape) {
           font-size: 2.2rem;
+        }
+        @media (min-width: 1024px) {
+          font-size: 2.4rem;
         }
       }
     }
@@ -154,7 +189,7 @@ body {
   text-align: justify;
   padding: 20px 10px;
   @media (min-width: 1024px) {
-    margin-left: 35vw;
+    margin: 70px 0 80px 35vw;
     width: 64.5vw;
   }
   h2 {
@@ -200,7 +235,7 @@ body {
   margin-bottom: 50px;
   width: 100vw;
   @media (min-width: 1024px) {
-    margin-left: 35vw;
+    margin: 0 0 80px 35vw;
     width: 64.5vw;
   }
   &__header {
@@ -313,12 +348,13 @@ body {
 .works {
   height: 80vh;
   color: $orange;
+  @media (min-width: 500px) and(orientation:landscape) {
+    height: 130vh;
+  }
   @media (min-width: 1024px) {
     margin-left: 35vw;
     width: 64.5vw;
-  }
-  @media (min-width: 500px) and(orientation:landscape) {
-    height: 130vh;
+    height: 100vh;
   }
   h2 {
     font-size: 2.4rem;
@@ -339,6 +375,9 @@ body {
       background-position: center;
       @media (min-width: 500px) and(orientation:landscape) {
         height: 90vh;
+      }
+      @media (min-width: 1024px) {
+        height: 75vh;
       }
     }
     p {
@@ -390,9 +429,13 @@ body {
   @media (min-width: 500px) and(orientation:landscape) {
     height: 160vh;
   }
+  @media (min-width: 1024px) {
+    height: 87vh;
+  }
   h2 {
     font-size: 2.1rem;
     font-weight: 500;
+    letter-spacing: 0.3px;
     @media (min-width: 360px) {
       font-size: 2.3rem;
     }
@@ -407,6 +450,7 @@ body {
   h3 {
     margin: 10px 0;
     font-size: 1.7rem;
+    letter-spacing: 0.3px;
     @media (min-width: 360px) {
       font-size: 1.9rem;
     }
@@ -417,6 +461,7 @@ body {
   p {
     font-size: 1.5rem;
     font-weight: 500;
+    letter-spacing: 0.3px;
     color: $white;
     @media (min-width: 360px) {
       font-size: 1.7rem;
@@ -427,6 +472,7 @@ body {
   }
   a {
     font-size: 1.9rem;
+    letter-spacing: 0.3px;
     color: $white;
     @media (min-width: 768px) {
       font-size: 2.4rem;
@@ -439,6 +485,7 @@ body {
     margin: 10px 0;
     p {
       font-size: 1.9rem;
+      letter-spacing: 0.3px;
       @media (min-width: 768px) {
         font-size: 2.4rem;
       }
@@ -451,6 +498,7 @@ body {
     border: none;
     font-size: 0.9rem;
     font-weight: bold;
+    letter-spacing: 0.3px;
     text-transform: uppercase;
     margin-top: 0px;
     cursor: pointer;
@@ -460,6 +508,9 @@ body {
     @media (min-width: 768px) {
       font-size: 1.3rem;
     }
+    @media (min-width: 1024px) {
+      margin-left: 40vw;
+    }
   }
 }
 
@@ -468,6 +519,7 @@ body {
   height: 30px;
   line-height: 30px;
   font-size: 1.2rem;
+  letter-spacing: 0.3px;
   text-align: center;
   background-color: #231f20;
   color: white;

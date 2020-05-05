@@ -16,6 +16,29 @@ body {
 
 .header__contact {
   position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  height: 70px;
+  z-index: 10;
+  padding: 10px 0 15px 10px;
+  background-color: #2b337b;
+}
+
+@media (min-width: 1024px) {
+  .header__contact {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.header__contact--mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,16 +49,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 0;
-  width: 100vw;
-  height: 70px;
-  z-index: 10;
-  padding: 10px 0 15px 10px;
-  background-color: #2b337b;
 }
 
 .header__contact p {
   font-size: 1.6rem;
+  letter-spacing: 0.3px;
   color: #f0eee1;
 }
 
@@ -53,6 +71,29 @@ body {
 
 .header__contact p a {
   color: #f0eee1;
+}
+
+.header__contact--desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header__contact--desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 64vw;
+  }
+  .header__contact--desktop p {
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
 }
 
 .header__main {
@@ -73,17 +114,19 @@ body {
   margin-top: 70px;
 }
 
-@media (min-width: 1024px) {
-  .header__main {
-    position: fixed;
-    width: 30vw;
-    z-index: 30;
-  }
-}
-
 @media (min-width: 500px) and (orientation: landscape) {
   .header__main {
     height: 140vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__main {
+    position: fixed;
+    margin-top: 0;
+    width: 30vw;
+    height: 100vh;
+    z-index: 30;
   }
 }
 
@@ -91,6 +134,7 @@ body {
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 400;
+  letter-spacing: 0.3px;
   line-height: 3.5rem;
   color: #f0582b;
   -webkit-animation: headerFirstText 2.5s ease-in-out;
@@ -130,6 +174,12 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .header__title h1 {
+    font-size: 2.4rem;
+  }
+}
+
 .header__logo img {
   height: 70px;
   width: 260px;
@@ -163,6 +213,13 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .header__logo img {
+    height: 80px;
+    width: 270px;
+  }
+}
+
 .header__menu {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -175,6 +232,7 @@ body {
 
 .header__menu ul li {
   font-size: 1.5rem;
+  letter-spacing: 0.3px;
   color: #2b337b;
   cursor: pointer;
 }
@@ -200,6 +258,12 @@ body {
 @media (min-width: 800px) and (orientation: landscape) {
   .header__menu ul li {
     font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__menu ul li {
+    font-size: 2.4rem;
   }
 }
 
@@ -231,7 +295,7 @@ body {
 
 @media (min-width: 1024px) {
   .about {
-    margin-left: 35vw;
+    margin: 70px 0 80px 35vw;
     width: 64.5vw;
   }
 }
@@ -303,7 +367,7 @@ body {
 
 @media (min-width: 1024px) {
   .services {
-    margin-left: 35vw;
+    margin: 0 0 80px 35vw;
     width: 64.5vw;
   }
 }
@@ -468,16 +532,17 @@ body {
   color: #f0582b;
 }
 
+@media (min-width: 500px) and (orientation: landscape) {
+  .works {
+    height: 130vh;
+  }
+}
+
 @media (min-width: 1024px) {
   .works {
     margin-left: 35vw;
     width: 64.5vw;
-  }
-}
-
-@media (min-width: 500px) and (orientation: landscape) {
-  .works {
-    height: 130vh;
+    height: 100vh;
   }
 }
 
@@ -509,6 +574,12 @@ body {
 @media (min-width: 500px) and (orientation: landscape) {
   .works__gallery--image {
     height: 90vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .works__gallery--image {
+    height: 75vh;
   }
 }
 
@@ -589,9 +660,16 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .contact {
+    height: 87vh;
+  }
+}
+
 .contact h2 {
   font-size: 2.1rem;
   font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
 @media (min-width: 360px) {
@@ -616,6 +694,7 @@ body {
 .contact h3 {
   margin: 10px 0;
   font-size: 1.7rem;
+  letter-spacing: 0.3px;
 }
 
 @media (min-width: 360px) {
@@ -633,6 +712,7 @@ body {
 .contact p {
   font-size: 1.5rem;
   font-weight: 500;
+  letter-spacing: 0.3px;
   color: #f0eee1;
 }
 
@@ -650,6 +730,7 @@ body {
 
 .contact a {
   font-size: 1.9rem;
+  letter-spacing: 0.3px;
   color: #f0eee1;
 }
 
@@ -669,6 +750,7 @@ body {
 
 .contact__phone p {
   font-size: 1.9rem;
+  letter-spacing: 0.3px;
 }
 
 @media (min-width: 768px) {
@@ -684,6 +766,7 @@ body {
   border: none;
   font-size: 0.9rem;
   font-weight: bold;
+  letter-spacing: 0.3px;
   text-transform: uppercase;
   margin-top: 0px;
   cursor: pointer;
@@ -701,11 +784,18 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .contact__toTop {
+    margin-left: 40vw;
+  }
+}
+
 .footer {
   margin: 0 auto;
   height: 30px;
   line-height: 30px;
   font-size: 1.2rem;
+  letter-spacing: 0.3px;
   text-align: center;
   background-color: #231f20;
   color: white;
