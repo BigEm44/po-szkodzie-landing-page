@@ -88,7 +88,7 @@ body {
       position: fixed;
       margin-top: 0;
       width: 30vw;
-      height: 90vh;
+      min-height: 90vh;
       z-index: 30;
     }
   }
