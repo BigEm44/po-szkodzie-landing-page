@@ -10,7 +10,6 @@ const headerElements = [
 ];
 const menuElements = [...document.querySelectorAll('.header__menu li')];
 let topPos = sections.map((section) => section.offsetTop - 70);
-console.log(headerElements);
 
 headerElements.forEach((headerElement, index) => {
   headerElement.addEventListener('click', () => {

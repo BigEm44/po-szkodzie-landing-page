@@ -133,7 +133,7 @@ body {
     position: fixed;
     margin-top: 0;
     width: 30vw;
-    height: 90vh;
+    min-height: 90vh;
     z-index: 30;
   }
 }
@@ -316,7 +316,7 @@ body {
 
 @media (min-width: 360px) {
   .about h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -336,12 +336,6 @@ body {
   font-size: 1.4rem;
 }
 
-@media (min-width: 360px) {
-  .about p {
-    font-size: 1.6rem;
-  }
-}
-
 @media (min-width: 768px) {
   .about p {
     font-size: 1.8rem;
@@ -355,7 +349,7 @@ body {
 }
 
 .about p span {
-  font-size: 2.1rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -366,12 +360,6 @@ body {
   list-style-type: square;
 }
 
-@media (min-width: 360px) {
-  .about__list {
-    font-size: 1.6rem;
-  }
-}
-
 @media (min-width: 768px) {
   .about__list {
     font-size: 1.8rem;
@@ -379,7 +367,7 @@ body {
 }
 
 .about__list span {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -514,12 +502,6 @@ body {
   line-height: 2.8rem;
   text-align: justify;
   color: black;
-}
-
-@media (min-width: 360px) {
-  .services__dryText, .services__ozonText, .services__buyText {
-    font-size: 1.6rem;
-  }
 }
 
 @media (min-width: 768px) {
