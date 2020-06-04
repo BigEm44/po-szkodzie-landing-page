@@ -30,23 +30,23 @@ body {
     z-index: 10;
     padding: 10px 0 15px 10px;
     background-color: $blue;
-    @media (min-width: 1024px) {
-      justify-content: space-between;
-    }
     &--mobile {
       display: flex;
       flex-direction: column;
       justify-content: center;
-    }
-    p {
-      font-size: 1.6rem;
-      letter-spacing: 0.3px;
-      color: $white;
-      @media (min-width: 360px) {
-        font-size: 1.8rem;
+      @media (min-width: 1024px) {
+        display: none;
       }
-      @media (min-width: 768px) {
-        font-size: 2rem;
+      p {
+        font-size: 1.6rem;
+        letter-spacing: 0.3px;
+        color: $white;
+        @media (min-width: 360px) {
+          font-size: 1.8rem;
+        }
+        @media (min-width: 768px) {
+          font-size: 2rem;
+        }
       }
       a {
         color: $white;
@@ -57,15 +57,23 @@ body {
       @media (min-width: 1024px) {
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        width: 64vw;
-        li {
-          list-style: none;
-          font-size: 2.7rem;
-          text-transform: uppercase;
-          letter-spacing: 0.3rem;
+        width: 100vw;
+        div {
+          display: flex;
+          align-items: center;
+        }
+        img {
+          height: 70px;
+          width: 280px;
+        }
+        p {
+          font-size: 2.8rem;
+          letter-spacing: 0.2rem;
           color: $white;
-          cursor: pointer;
+        }
+        a {
+          font-size: 2.8rem;
+          color: $white;
           &:hover {
             color: $yellow;
             transition: 0.3s;
@@ -86,9 +94,10 @@ body {
     }
     @media (min-width: 1024px) {
       position: fixed;
-      margin-top: 0;
+      justify-content: space-around;
+      margin-top: 35px;
       width: 30vw;
-      min-height: 90vh;
+      height: calc(100vh - 80px);
       z-index: 30;
     }
   }
@@ -120,11 +129,17 @@ body {
         line-height: 3.5rem;
       }
       @media (min-width: 1024px) {
-        font-size: 2.4rem;
+        margin-left: 40px;
+        font-size: 2.6rem;
+        letter-spacing: 0.2rem;
+        line-height: 5rem;
       }
     }
   }
   &__logo {
+    @media (min-width: 1024px) {
+      display: none;
+    }
     img {
       height: 70px;
       width: 260px;
@@ -143,10 +158,6 @@ body {
       @media (min-width: 800px) and(orientation:landscape) {
         height: 80px;
         width: 380px;
-      }
-      @media (min-width: 1024px) {
-        height: 80px;
-        width: 270px;
       }
     }
   }
@@ -173,7 +184,12 @@ body {
           font-size: 2.2rem;
         }
         @media (min-width: 1024px) {
-          font-size: 2.4rem;
+          margin-left: 50px;
+          font-size: 2.6rem;
+          &:hover {
+            color: $black;
+            transition: 0.3s;
+          }
         }
       }
     }
@@ -198,7 +214,7 @@ body {
   @media (min-width: 1024px) {
     margin: 70px 0 90px 35vw;
     width: 64.5vw;
-    padding: 135px 0;
+    padding: 135px 30px;
   }
   h2 {
     padding: 20px 0 10px 0;
@@ -219,10 +235,10 @@ body {
       font-size: 1.8rem;
     }
     @media (min-width: 768px) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     span {
-      font-size: 1.6rem;
+      font-size: 2rem;
       font-weight: bold;
     }
   }
